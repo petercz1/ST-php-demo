@@ -32,6 +32,11 @@ function check_for_fatal()
     }
 }
 
+function cl($message)
+{
+    file_put_contents($config["app_dir"] . "./notices.log", $message . PHP_EOL, FILE_APPEND);
+}
+
 register_shutdown_function("check_for_fatal");
 set_error_handler("log_error");
 set_exception_handler("log_exception");
