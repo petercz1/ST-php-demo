@@ -1,6 +1,10 @@
 <?php
 class loggit{
-    
+$ver_no;
+    function __construct(){
+        var $num_val = 
+    }
+
 function log_error($num, $str, $file, $line, $context = null)
 {
     log_exception(new ErrorException($str, 0, $num, $file, $line));
