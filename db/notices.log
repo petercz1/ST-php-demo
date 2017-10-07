@@ -1,21 +1,3 @@
-line 5 (execute_sql.php) 1
-line 6 (execute_sql.php) 1
 line 5 (execute_sql.php) testing
-line 6 (execute_sql.php) Array
-(
-    [sql] => 
-)
-
-line 5 (execute_sql.php) testing
-line 6 (execute_sql.php) Array
-(
-    [sql] => select * from users
-)
-
-line 5 (execute_sql.php) testing
-line 6 (execute_sql.php) Array
-(
-    [sql] => select * from users
-)
-
+line 6 (execute_sql.php) select * from users
 Line 16 in execute_sql.php, Undefined variable: sql  (ErrorException)
