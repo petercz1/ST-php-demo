@@ -1,0 +1,5 @@
+Line 14 in errors.php, Uncaught TypeError: Argument 1 passed to log_exception() must be an instance of Exception, instance of Error given in /home/pc/data/sites/teaching/GA/WDI/wdi_hk_14/sites/php_demo/db/errors.php:14
+Stack trace:
+#0 [internal function]: log_exception(Object(Error))
+#1 {main}
+  thrown  (ErrorException)
