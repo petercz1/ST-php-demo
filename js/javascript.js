@@ -8,7 +8,7 @@ function do_setup(){
 }
 
 function run_command(){
-    $('#submit').removeClass().addClass('btn btn-warning').text('submitting...');
+    $('#submit').removeClass().addClass('btn btn-warning right').text('submitting...');
     console.log('Inside run_command');
     var cmd = $('#input_command').val();
     var data = {sql:cmd};
@@ -17,13 +17,13 @@ function run_command(){
 
 function success(data){
     console.log('Inside success');
-    $('#submit').removeClass().addClass('btn btn-warning').text('submitting...');
+    $('#submit').removeClass().addClass('btn btn-success right').text('submitting...');
     console.log(data);
 }
 
 function oops(data){
     console.log('Inside oops - something went wrong with php?');
-    $('#submit').removeClass('btn-primary').addClass('btn-warning').text('submitting...');
+    $('#submit').removeClass().addClass('btn btn-danger right').text('submitting...');
 
     console.log(data);
 
