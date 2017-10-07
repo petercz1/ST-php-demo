@@ -16,7 +16,7 @@ function log_exception(Exception $e)
     global $config;
     $message = "Line {$e->getLine()} in " . basename($e->getFile()) . ", {$e->getMessage()}  (" . get_class($e) . ")";
 
-    file_put_contents($config["app_dir"] . "./notices.log", $message . PHP_EOL, FILE_APPEND);
+    file_put_contents($config["app_dir"] . "/notices.log", $message . PHP_EOL, FILE_APPEND);
     header("Location: {$config["error_page"]}");
     exit();
 }
@@ -36,7 +36,7 @@ function logger($message)
 {
     global $config;
     $debug_arr = debug_backtrace();
-    file_put_contents('line ' . $config["app_dir"] . "./notices.log", $debug_arr[0]['line'] . ': ' . $message . PHP_EOL, FILE_APPEND);
+    file_put_contents('line ' . $config["app_dir"] . "/notices.log", $debug_arr[0]['line'] . ': ' . $message . PHP_EOL, FILE_APPEND);
 }
 
 register_shutdown_function("check_for_fatal");
