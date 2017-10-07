@@ -28,3 +28,4 @@ Stack trace:
 #0 [internal function]: log_exception(Object(Error))
 #1 {main}
   thrown  (ErrorException)
+Line 27 in errors.php, Cannot redeclare logger() (previously declared in /home/pc/data/sites/teaching/GA/WDI/wdi_hk_14/sites/php_demo/db/errors.php:27)  (ErrorException)
