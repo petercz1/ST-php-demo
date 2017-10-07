@@ -5,7 +5,7 @@ $(document).ready(do_setup);
 function do_setup(){
     console.log('Inside do_setup');
     $('#submit').click(run_command);
-    $('#input_command').click('reset');
+    $('#input_command').click(reset);
 }
 
 function run_command(){
