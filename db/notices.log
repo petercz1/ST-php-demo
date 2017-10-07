@@ -1,3 +1,5 @@
 Line 37 in errors.php, Undefined variable: config  (ErrorException)
 testing
 Line 15 in execute_sql.php, Undefined variable: sql  (ErrorException)
+5testing
+Line 15 in execute_sql.php, Undefined variable: sql  (ErrorException)
