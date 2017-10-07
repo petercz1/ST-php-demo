@@ -7,7 +7,7 @@ include 'credentials.php';
 logger('testing');
 logger($_GET['sql']);
 
-$db = new Db;
-$db.conn();
+$db = new Db();
+$db->conn();
 
 $conn = null;
