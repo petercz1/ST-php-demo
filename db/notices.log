@@ -7,3 +7,7 @@ line 6 (class.db.php) making a db connection
 line 7 (execute_sql.php) testing
 line 8 (execute_sql.php) select * from users
 Line 17 in class.db.php, Class 'chipbug\php_demo\PDO' not found  (Error)
+line 7 (class.db.php) making a db connection
+line 7 (execute_sql.php) testing
+line 8 (execute_sql.php) select * from users
+line 22 (class.db.php) Database created successfully<br>
