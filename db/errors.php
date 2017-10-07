@@ -1,5 +1,6 @@
 <?php
-
+class loggit{
+    
 function log_error($num, $str, $file, $line, $context = null)
 {
     log_exception(new ErrorException($str, 0, $num, $file, $line));
@@ -35,3 +36,4 @@ set_error_handler("log_error");
 set_exception_handler("log_exception");
 ini_set("display_errors", "on");
 error_reporting(E_ALL);
+}
