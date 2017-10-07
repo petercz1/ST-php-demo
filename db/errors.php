@@ -2,7 +2,8 @@
 class loggit{
 $ver_no;
     function __construct(){
-        var $num_val = 
+        $ver_no = explode('.', PHP_VERSION)[0];
+        logger($ver_no);
     }
 
 function log_error($num, $str, $file, $line, $context = null)
