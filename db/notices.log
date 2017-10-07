@@ -1,0 +1,4 @@
+line 7 (class.db.php) making a db connection
+line 7 (execute_sql.php) testing
+line 8 (execute_sql.php) 
+Line 16 in class.db.php, Undefined variable: username  (ErrorException)
