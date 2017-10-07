@@ -1,7 +1,7 @@
 <?php
 namespace chipbug\php_demo;
 
-use \chipbug\php_demo\Db as Db;
+use \chipbug\php_demo\Db;
 
 include 'errors.php';
 include 'credentials.php';
