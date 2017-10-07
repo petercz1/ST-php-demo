@@ -1,7 +1,5 @@
 <?php
 
-namespace chipbug\php_demo
-
 function log_error($num, $str, $file, $line, $context = null)
 {
     log_exception(new ErrorException($str, 0, $num, $file, $line));

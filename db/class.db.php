@@ -1,13 +1,15 @@
 <?php
-namespace chipbug\php_demo
+namespace chipbug\php_demo;
 
 include 'errors.php';
 include 'credentials.php';
 
 logger('making a db connection');
 
-class Db{
-public function conn(){
+class Db
+{
+    public function conn()
+    {
         try {
             $conn = new PDO("mysql:host=localhost", $username, $password);
             // set the PDO error mode to exception
