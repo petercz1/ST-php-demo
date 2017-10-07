@@ -1,6 +1,8 @@
 <?php
 namespace chipbug\php_demo;
 
+use \chipbug\php_demo\Db as Db;
+
 include 'errors.php';
 include 'credentials.php';
 
