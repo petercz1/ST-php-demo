@@ -32,7 +32,7 @@ function check_for_fatal()
     }
 }
 
-function cl($message)
+function logger($message)
 {
     global $config;
     $debug_arr = debug_backtrace();
