@@ -13,7 +13,7 @@ try {
     $conn->exec($sql);
     echo "Database created successfully<br>";
 } catch (PDOException $e) {
-    echo json_encode($sql . "<br>" . $e->getMessage());
+    echo json_encode($e->getMessage());
 }
 
 $conn = null;
