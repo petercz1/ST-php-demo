@@ -7,6 +7,8 @@ logger('making a db connection');
 
 class Db
 {
+    global $username;
+    global $password;
     public function conn()
     {
         try {
