@@ -21,6 +21,7 @@ class Db
             $conn->exec($sql);
             logger("Database created successfully");
             echo "Database created successfully";
+            $conn = null;
         } catch (Exception $e) {
             logger($e->getMessage());
             echo json_encode($e->getMessage());

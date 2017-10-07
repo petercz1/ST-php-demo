@@ -9,5 +9,3 @@ logger($_GET['sql']);
 
 $db = new Db();
 $db->conn();
-
-$conn = null;
