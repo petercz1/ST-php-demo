@@ -1,6 +1,0 @@
-line 5 (execute_sql.php) testing
-line 6 (execute_sql.php) select * from users
-line 17 (execute_sql.php) SQLSTATE[HY000]: General error: 1007 Can't create database 'scrap'; database exists
-line 5 (execute_sql.php) testing
-line 6 (execute_sql.php) select * from users
-line 14 (execute_sql.php) Database created successfully<br>
