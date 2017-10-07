@@ -7,7 +7,7 @@ include 'credentials.php';
 logger('making a db connection');
 
 class Db{
-public function db_conn(){
+public function conn(){
         try {
             $conn = new PDO("mysql:host=localhost", $username, $password);
             // set the PDO error mode to exception
