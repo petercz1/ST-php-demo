@@ -18,18 +18,18 @@ function run_command() {
   $.get('db/execute_sql.php', data).done(success).fail(oops);
 }
 
-function success(data) {
+function success(echo_results) {
   console.log('Inside success');
   $('#submit').removeClass().addClass('btn btn-success right').text('success!');
-  console.log(data);
-  $('#output').prepend(data);
+  console.log(echo_results);
+  $('#output').prepend(echo_results);
 }
 
-function oops(data) {
+function oops(echo_results) {
   console.log('Inside oops');
   $('#submit').removeClass().addClass('btn btn-danger right').text('oops...');
-  console.log(data);
-  $('#output').prepend(data);
+  console.log(echo_results);
+  $('#output').prepend(echo_results);
 
 }
 
