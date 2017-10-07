@@ -15,7 +15,6 @@ function log_exception(Exception $e)
 {
     global $config;
     $message = "Line {$e->getLine()} in " . basename($e->getFile()) . ", {$e->getMessage()}  (" . get_class($e) . ")";
-    file_put_contents($config["app_dir"] . "./errors.log", '');
     file_put_contents($config["app_dir"] . "./errors.log", $message . PHP_EOL, FILE_APPEND);
     header("Location: {$config["error_page"]}");
     exit();
