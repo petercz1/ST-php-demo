@@ -19,8 +19,8 @@ class Db
             $sql = "CREATE DATABASE scrap5";
             // use exec() because no results are returned
             $conn->exec($sql);
-            logger('Database created successfully<br>');
-            echo "Database created successfully<br>";
+            logger("Database created successfully");
+            echo "Database created successfully";
         } catch (Exception $e) {
             logger($e->getMessage());
             echo json_encode($e->getMessage());
