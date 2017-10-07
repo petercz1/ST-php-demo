@@ -1,8 +1,8 @@
 <?php
 namespace chipbug\php_demo;
 
-include 'class.db.php';
 include 'errors.php';
+include 'class.db.php';
 
 logger('testing');
 logger($_GET['sql']);
