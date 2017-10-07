@@ -12,16 +12,19 @@ function run_command(){
     console.log('Inside run_command');
     var cmd = $('#input_command').val();
     var data = {sql:cmd};
-    $.get('execute_sql.php', data).done(success).fail(oops);
+    $.get('db/execute_sql.php', data).done(success).fail(oops);
 }
 
 function success(data){
     console.log('Inside success');
+    $('#submit').removeClass('btn-primary').addClass('btn-warning').text('submitting...');
     console.log(data);
 }
 
 function oops(data){
     console.log('Inside oops - something went wrong with php?');
+    $('#submit').removeClass('btn-primary').addClass('btn-warning').text('submitting...');
+
     console.log(data);
 
 }
