@@ -1,3 +1,5 @@
 <?php
 
-sleep(1);
+include 'credentials.php';
+
+echo $username . ': ' . $password;
