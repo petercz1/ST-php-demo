@@ -8,3 +8,5 @@ line 7 (execute_sql.php) testing
 line 8 (execute_sql.php) 
 line 7 (execute_sql.php) testing
 line 8 (execute_sql.php) select * from users
+line 7 (execute_sql.php) testing
+line 8 (execute_sql.php) select * from users
