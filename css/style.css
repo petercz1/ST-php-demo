@@ -6,11 +6,11 @@
     width: 100%;
 }
 
+.full_width *{
+    margin: 0.2em;
+}
+
 #input_command{
     display: block;
     margin: auto;
-}
-
-.input-group{
-    margin: 0.5em;
 }
