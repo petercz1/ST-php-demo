@@ -14,3 +14,7 @@
     display: block;
     margin: auto;
 }
+
+#submit{
+    width: 10em;
+}
