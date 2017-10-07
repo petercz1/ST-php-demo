@@ -1,6 +1,6 @@
 <?php
 class loggit{
-$ver_no;
+public $ver_no;
     function __construct(){
         $ver_no = explode('.', PHP_VERSION)[0];
         logger($ver_no);
