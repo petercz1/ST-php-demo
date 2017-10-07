@@ -1,5 +1,0 @@
-{
-    "require":{
-        "middlewares/fast-route": "^0.8.0"
-    }
-}
