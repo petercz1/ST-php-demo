@@ -12,5 +12,16 @@ function run_command(){
     console.log('Inside run_command');
     var cmd = $('#input_command').val();
     var data = {sql:cmd};
-    $.get('execute_sql.php', data).done().fail();
+    $.get('execute_sql.php', data).done(success).fail(oops);
+}
+
+function success(data){
+    console.log('Inside success');
+    console.log(data);
+}
+
+function oops(data){
+    console.log('Inside oops - something went wrong with php?');
+    console.log(data);
+
 }
