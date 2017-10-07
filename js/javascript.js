@@ -10,6 +10,7 @@ function do_setup(){
 function run_command(){
     $('#submit').removeClass('btn-primary').addClass('btn-warning').text('submitting...');
     console.log('Inside run_command');
-    var cmd = $('#')
-    $.get('').done().fail();
+    var cmd = $('#input_command').val();
+    var data = {sql:cmd};
+    $.get('execute_sql.php', data).done().fail();
 }
