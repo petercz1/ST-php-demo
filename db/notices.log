@@ -1,2 +1,14 @@
 line 5 (execute_sql.php) 1
 line 6 (execute_sql.php) 1
+line 5 (execute_sql.php) testing
+line 6 (execute_sql.php) Array
+(
+    [sql] => 
+)
+
+line 5 (execute_sql.php) testing
+line 6 (execute_sql.php) Array
+(
+    [sql] => select * from users
+)
+
