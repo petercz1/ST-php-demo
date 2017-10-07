@@ -35,7 +35,8 @@ function check_for_fatal()
 function cl($message)
 {
     global $config;
-    file_put_contents($config["app_dir"] . "./notices.log", $message . PHP_EOL, FILE_APPEND);
+    $debug_arr = debug_backtrace();
+    file_put_contents($config["app_dir"] . "./notices.log", $debug_arr[0]['line'] . $message . PHP_EOL, FILE_APPEND);
 }
 
 register_shutdown_function("check_for_fatal");
