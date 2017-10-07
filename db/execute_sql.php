@@ -1,5 +1,5 @@
 <?php
-
+namespace \chipbug\
 include 'errors.php';
 include 'credentials.php';
 logger('testing');
