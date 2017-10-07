@@ -22,14 +22,14 @@ function success(echo_results) {
   console.log('Inside success');
   $('#submit').removeClass().addClass('btn btn-success right').text('success!');
   console.log(echo_results);
-  $('#output').prepend(echo_results);
+  $('#output').text(echo_results);
 }
 
 function oops(echo_results) {
   console.log('Inside oops');
   $('#submit').removeClass().addClass('btn btn-danger right').text('oops...');
   console.log(echo_results);
-  $('#output').prepend(echo_results);
+  $('#output').text(echo_results);
 
 }
 

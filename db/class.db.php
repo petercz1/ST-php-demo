@@ -14,7 +14,7 @@ class Db
             $conn = new PDO("mysql:host=localhost", $username, $password);
             // set the PDO error mode to exception
             $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-            $sql = "CREATE DATABASE scrap3";
+            $sql = "CREATE DATABASE scrap4";
             // use exec() because no results are returned
             $conn->exec($sql);
             logger('Database created successfully<br>');
