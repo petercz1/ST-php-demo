@@ -5,7 +5,7 @@ include 'credentials.php';
 logger('testing');
 logger($_GET['sql']);
 try {
-    $conn = new PDO("mysql:host='localhost'", $username, $password);
+    $conn = new PDO("mysql:host=localhost", $username, $password);
     // set the PDO error mode to exception
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     $sql = "CREATE DATABASE scrap";
