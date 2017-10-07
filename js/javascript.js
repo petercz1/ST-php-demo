@@ -10,5 +10,6 @@ function do_setup(){
 function run_command(){
     $('#submit').removeClass('btn-primary').addClass('btn-warning').text('submitting...');
     console.log('Inside run_command');
-    
+    var cmd = $('#')
+    $.get('').done().fail();
 }
