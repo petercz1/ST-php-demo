@@ -19,7 +19,7 @@ class Db
             $conn->exec($sql);
             logger('Database created successfully<br>');
             echo "Database created successfully<br>";
-        } catch (PDOException $e) {
+        } catch (Exception $e) {
             logger($e->getMessage());
             echo json_encode($e->getMessage());
         }
