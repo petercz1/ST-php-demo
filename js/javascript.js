@@ -22,7 +22,8 @@ function success(echo_results) {
   console.log('Inside success');
   $('#submit').removeClass().addClass('btn btn-success right').text('success!');
   console.log(echo_results);
-  $('#output').text(JSON.parse(echo_results));
+  $('#output').text(echo_results);
+  //$('#output').text(JSON.parse(echo_results));
 }
 
 function oops(echo_results) {
