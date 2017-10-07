@@ -5,8 +5,8 @@ include 'class.db.php';
 include 'errors.php';
 include 'credentials.php';
 
-logger('testing');
-logger($_GET['sql']);
+// logger('testing');
+// logger($_GET['sql']);
 
 $db = new Db();
 $db->conn();

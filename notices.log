@@ -30,3 +30,5 @@ Stack trace:
   thrown  (ErrorException)
 Line 27 in errors.php, Cannot redeclare logger() (previously declared in /home/pc/data/sites/teaching/GA/WDI/wdi_hk_14/sites/php_demo/db/errors.php:27)  (ErrorException)
 Line 27 in errors.php, Cannot redeclare logger() (previously declared in /home/pc/data/sites/teaching/GA/WDI/wdi_hk_14/sites/php_demo/db/errors.php:27)  (ErrorException)
+Line 27 in errors.php, Cannot redeclare logger() (previously declared in /home/pc/data/sites/teaching/GA/WDI/wdi_hk_14/sites/php_demo/db/errors.php:27)  (ErrorException)
+Line 27 in errors.php, Cannot redeclare logger() (previously declared in /home/pc/data/sites/teaching/GA/WDI/wdi_hk_14/sites/php_demo/db/errors.php:27)  (ErrorException)
