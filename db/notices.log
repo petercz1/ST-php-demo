@@ -1,2 +1,5 @@
 line 7 (execute_sql.php) testing
 line 8 (execute_sql.php) select * from users
+line 7 (execute_sql.php) testing
+line 8 (execute_sql.php) select * from users
+Line 10 in execute_sql.php, Class 'chipbug\php_demo\Db' not found  (Error)
