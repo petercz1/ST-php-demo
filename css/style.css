@@ -1,0 +1,8 @@
+.right{
+    float: right;
+}
+
+#input_command{
+    display: block;
+    margin: auto;
+}
