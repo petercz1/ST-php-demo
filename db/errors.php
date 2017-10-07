@@ -1,16 +1,10 @@
 <?php
 
-/**
-* Error handler, passes flow over the exception logger with new ErrorException.
-*/
 function log_error($num, $str, $file, $line, $context = null)
 {
     log_exception(new ErrorException($str, 0, $num, $file, $line));
 }
 
-/**
-* Uncaught exception handler.
-*/
 function log_exception(Exception $e)
 {
     global $config;
@@ -21,9 +15,6 @@ function log_exception(Exception $e)
     exit();
 }
 
-/**
-* Checks for a fatal error, work around for set_error_handler not working on fatal errors.
-*/
 function check_for_fatal()
 {
     $error = error_get_last();
