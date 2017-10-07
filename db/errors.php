@@ -5,7 +5,7 @@ function log_error($num, $str, $file, $line, $context = null)
     log_exception(new ErrorException($str, 0, $num, $file, $line));
 }
 
-function log_exception(Throwable $e)
+function log_exception(Exception $e)
 {
     global $config;
     $message = "Line {$e->getLine()} in " . basename($e->getFile()) . ", {$e->getMessage()}  (" . get_class($e) . ")";
