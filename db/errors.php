@@ -1,17 +1,12 @@
 <?php
-class loggit{
-    public $ver_no;
-    function __construct(){
-        $ver_no = explode('.', PHP_VERSION)[0];
-        logger($ver_no);
-    }
 
 function log_error($num, $str, $file, $line, $context = null)
 {
     log_exception(new ErrorException($str, 0, $num, $file, $line));
 }
 
-function log_exception(Exception $e)
+//function log_exception(Exception $e) // for php < 7.0
+function log_exception(Throwable $e) // for php > 7.0
 {
     global $config;
     $message = "Line {$e->getLine()} in " . basename($e->getFile()) . ", {$e->getMessage()}  (" . get_class($e) . ")";
@@ -41,4 +36,3 @@ set_error_handler("log_error");
 set_exception_handler("log_exception");
 ini_set("display_errors", "on");
 error_reporting(E_ALL);
-}
