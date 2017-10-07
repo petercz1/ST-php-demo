@@ -34,6 +34,7 @@ function check_for_fatal()
 
 function cl($message)
 {
+    global $config;
     file_put_contents($config["app_dir"] . "./notices.log", $message . PHP_EOL, FILE_APPEND);
 }
 
