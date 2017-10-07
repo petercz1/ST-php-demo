@@ -3,6 +3,7 @@
 include 'errors.php';
 include 'credentials.php';
 logger('testing');
+logger($_GET);
 try {
     $conn = new PDO("mysql:host='localhost'", $username, $password);
     // set the PDO error mode to exception
