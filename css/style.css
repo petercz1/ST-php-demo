@@ -2,6 +2,10 @@
     float: right;
 }
 
+.full_width{
+    width: 100%;
+}
+
 #input_command{
     display: block;
     margin: auto;
