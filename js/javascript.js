@@ -3,6 +3,7 @@ console.log('js loaded');
 $(document).ready(do_setup);
 
 function do_setup() {
+  $('*').off('click');
   console.log('Inside do_setup');
   get_dbs();
   $('.delete_db').click(drop_db);
