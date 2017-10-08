@@ -9,7 +9,7 @@ logger('testing');
 logger($_GET['sql']);
 $name = $_GET['sql'];
 
-    $db = new DbConnect($username, $password);
-    // $sql = "CREATE DATABASE $name";
-    // $db->conn->exec($sql);
-    $db->kill();
+$db = new DbConnect($username, $password);
+$sql = "CREATE DATABASE $name";
+$db->conn->exec($sql);
+$db->kill();

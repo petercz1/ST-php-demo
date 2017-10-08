@@ -9,7 +9,7 @@ class DbConnect
         try {
             // Create connection
             $this->conn = new \mysqli('localhost', $username, $password);
-            logger('connected!')
+            logger('connected!');
             return $this->conn;
         } catch (Exception $ex) {
             logger($ex);
@@ -17,6 +17,6 @@ class DbConnect
     }
     public function kill()
     {
-        $conn->close();
+        $this->conn->close();
     }
 }
