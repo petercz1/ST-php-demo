@@ -11,13 +11,13 @@ class Db
     public function create_db($name)
     {
         try {
-            logger('passing ' . $name);
+            logger('trying to create db: ' . $name);
             global $username, $password, $servername;
             // Create connection
             $conn = new \mysqli($servername, $username, $password);
 
             // Create database
-            $sql = "CREATE DATABASE $$name";
+            $sql = "CREATE DATABASE $name";
             $result = $conn->query($sql);
             logger($result);
             // close conn
