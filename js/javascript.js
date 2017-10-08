@@ -24,6 +24,8 @@ function create_db() {
 function drop_db() {
   console.log('Inside drop_db');
   var dbName = $(this).attr('id');
+  console.log(dbName);
+
   var data = {
     db: dbName
   };
