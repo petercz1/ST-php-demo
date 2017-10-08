@@ -59,7 +59,10 @@ function get_dbs(){
 function show_dbs(data){
     console.log('Inside show_dbs');
     var data = JSON.parse(data);
-    data.each();
+    data.each(function(db){
+        var td = $('<td>');
+        td.text(db);
+    });
     var tr = $('<tr>');
     $('.table tbody').append(tr);
 
