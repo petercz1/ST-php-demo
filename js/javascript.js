@@ -15,7 +15,7 @@ function run_command() {
   var data = {
     db: dbName
   };
-  $.get('db/execute_sql.php', data).done(success).fail(oops);
+  $.get('db/create_db.php', data).done(success).fail(oops);
 }
 
 function success(echo_results) {
