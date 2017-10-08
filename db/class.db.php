@@ -8,7 +8,7 @@ logger('making a db connection');
 
 class Db
 {
-    public function connect()
+    public function create_db($name)
     {
         try {
             global $username, $password, $servername;
