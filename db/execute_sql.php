@@ -8,5 +8,5 @@ include 'class.dbconnect.php';
 logger('testing');
 logger($_GET['sql']);
 
-$db = new DbConnect();
-$conn = $db->connect($username, $password);
+$db = new DbConnect($username, $password);
+$conn = $db->connect();
