@@ -11,9 +11,9 @@ function do_setup() {
 function run_command() {
   console.log('Inside run_command');
   $('#submit').removeClass().addClass('btn btn-warning right').text('submitting...');
-  var cmd = $('#db_name').val();
+  var dbName = $('#db_name').val();
   var data = {
-    sql: cmd
+    db: dbName
   };
   $.get('db/execute_sql.php', data).done(success).fail(oops);
 }
