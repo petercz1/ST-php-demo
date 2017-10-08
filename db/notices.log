@@ -1,1 +1,3 @@
-Line 10 in class.dbconnect.php, syntax error, unexpected 'global' (T_GLOBAL), expecting function (T_FUNCTION)  (ParseError)
+Line 10 in class.dbconnect.php, syntax error, unexpected '$username' (T_VARIABLE), expecting function (T_FUNCTION)  (ParseError)
+Line 10 in class.dbconnect.php, syntax error, unexpected '$username' (T_VARIABLE), expecting function (T_FUNCTION)  (ParseError)
+Line 11 in class.dbconnect.php, syntax error, unexpected '$this' (T_VARIABLE), expecting function (T_FUNCTION)  (ParseError)
