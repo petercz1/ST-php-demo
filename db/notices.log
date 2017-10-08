@@ -1,2 +1,8 @@
-Line 21 in class.db.php, syntax error, unexpected 'result' (T_STRING), expecting variable (T_VARIABLE) or '{' or '$'  (ParseError)
-Line 28 in class.db.php, syntax error, unexpected '}'  (ParseError)
+line 7 (class.db.php) making a db connection
+line 7 (execute_sql.php) testing
+line 8 (execute_sql.php) 
+Line 11 in execute_sql.php, Call to undefined method chipbug\php_demo\Db::conn()  (Error)
+line 7 (class.db.php) making a db connection
+line 7 (execute_sql.php) testing
+line 8 (execute_sql.php) 
+Line 17 in class.db.php, Class 'chipbug\php_demo\mysqli' not found  (Error)

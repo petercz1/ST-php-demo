@@ -8,4 +8,4 @@ logger('testing');
 logger($_GET['sql']);
 
 $db = new Db();
-$db->conn();
+$db->connect();
