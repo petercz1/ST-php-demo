@@ -43,5 +43,5 @@ function get_dbs(){
 
 function show_dbs(data){
     console.log('Inside show_dbs');
-    console.log(data);
+    console.log(JSON.parse(data));
 }
