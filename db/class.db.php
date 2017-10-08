@@ -18,6 +18,7 @@ class Db
             // Create database
             $sql = "CREATE DATABASE test";
             $result = $conn->query($sql);
+            logger($result);
             // close conn
             $conn->close();
         } catch (Exception $ex) {
