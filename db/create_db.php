@@ -14,4 +14,4 @@ $sql = "CREATE DATABASE $name";
 $result = $db->conn->query($sql);
 $db->kill();
 
-echo $result;
+echo 'created...';
