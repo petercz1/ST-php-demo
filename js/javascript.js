@@ -39,9 +39,9 @@ function dropped_db(data) {
 
 function success(echo_results) {
   console.log('Inside success');
-  do_setup();
   $('#submit').removeClass().addClass('btn btn-success right').text('success!');
   console.log(echo_results);
+  do_setup();
 }
 
 function oops(echo_results) {

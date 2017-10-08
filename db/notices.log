@@ -22,3 +22,5 @@ line 15 (class.dbConnect.php) Connected successfully
 Line 16 in create_db.php, SQLSTATE[HY000]: General error: 1007 Can't create database 'woohoo'; database exists  (PDOException)
 line 15 (class.dbConnect.php) Connected successfully
 line 24 (class.dbConnect.php) killed connection
+line 15 (class.dbConnect.php) Connected successfully
+line 24 (class.dbConnect.php) killed connection
