@@ -3,11 +3,12 @@ console.log('js loaded');
 $(document).ready(do_setup);
 
 function do_setup() {
+  get_dbs();
+  
   console.log('Inside do_setup');
   $('#submit').click(create_db);
   $('#db_name').click(reset);
   $('#drop_db').click(drop_db);
-  get_dbs();
 }
 
 function create_db() {
@@ -20,18 +21,18 @@ function create_db() {
   $.get('db/create_db.php', data).done(success).fail(oops);
 }
 
-function drop_db(){
-    console.log('Inside drop_db');
-    var dbName = 'test2';
-    var data = {
-      db: dbName
-    };
-    $.get('db/drop_db.php', data).done(dropped_db).fail(oops);
+function drop_db() {
+  console.log('Inside drop_db');
+  var dbName = 'test2';
+  var data = {
+    db: dbName
+  };
+  $.get('db/drop_db.php', data).done(dropped_db).fail(oops);
 }
 
-function dropped_db(data){
-    console.log('Inside dropped_db');
-    console.log(data);
+function dropped_db(data) {
+  console.log('Inside dropped_db');
+  console.log(data);
 }
 
 function success(echo_results) {
@@ -51,26 +52,26 @@ function reset() {
   $('#submit').removeClass().addClass('btn btn-primary right').text('submit');
 }
 
-function get_dbs(){
-    console.log('Inside show_dbs');
-    $.get('db/show_databases.php').done(show_dbs).fail(oops);
+function get_dbs() {
+  console.log('Inside show_dbs');
+  $.get('db/show_databases.php').done(show_dbs).fail(oops);
 }
 
-function show_dbs(data){
-    console.log('Inside show_dbs');
-    var data = JSON.parse(data);
-    $.each(data, function(index,db){
-        var tr = $('<tr>');
-        var td = $('<td>');
-        td.text(db.Database);
-        tr.append(td);
-        td = $('<td>');
-        var btn = $('<button>');
-        btn.text('delete');
-        btn.addClass("btn btn-danger");
-        td.append(btn);
-        tr.append(td);
-        $('.table tbody').append(tr);
-    });
+function show_dbs(data) {
+  console.log('Inside show_dbs');
+  var data = JSON.parse(data);
+  $.each(data, function(index, db) {
+    var tr = $('<tr>');
+    var td = $('<td>');
+    td.text(db.Database);
+    tr.append(td);
+    td = $('<td>');
+    var btn = $('<button>');
+    btn.text('delete');
+    btn.addClass("btn btn-danger");
+    td.append(btn);
+    tr.append(td);
+    $('.table tbody').append(tr);
+  });
 
 }
