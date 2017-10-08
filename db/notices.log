@@ -1,4 +1,1 @@
-line 5 (class.dbconnect.php) root
-line 7 (execute_sql.php) testing
-line 8 (execute_sql.php) test2
-Line 13 in class.dbconnect.php, Undefined variable: username  (ErrorException)
+Line 10 in class.dbconnect.php, syntax error, unexpected 'global' (T_GLOBAL), expecting function (T_FUNCTION)  (ParseError)
