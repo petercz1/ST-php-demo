@@ -2,6 +2,7 @@
 namespace chipbug\php_demo;
 
 include 'credentials.php';
+logger($username);
 use PDO;
 
 class DbConnect
