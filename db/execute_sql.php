@@ -11,7 +11,7 @@ $name = $_GET['sql'];
 try {
     $db = new DbConnect($username, $password);
     $sql = 'CREATE DATABASE $name';
-    $db->$conn->exec($sql);
+    $db->exec($sql);
 } catch (Exception $ex) {
     logger($ex);
     echo $ex;

@@ -2,10 +2,9 @@ line 5 (class.dbconnect.php) root
 line 8 (execute_sql.php) testing
 line 9 (execute_sql.php) test2
 line 16 (class.dbconnect.php) Database connection created successfully
-Line 14 in execute_sql.php, Call to undefined method chipbug\php_demo\DbConnect::exec()  (Error)
+Line 14 in execute_sql.php, Undefined variable: conn  (ErrorException)
 line 5 (class.dbconnect.php) root
 line 8 (execute_sql.php) testing
 line 9 (execute_sql.php) test2
 line 16 (class.dbconnect.php) Database connection created successfully
-line 13 (execute_sql.php) chipbug\php_demo\DbConnect
-Line 15 in execute_sql.php, Call to undefined method chipbug\php_demo\DbConnect::exec()  (Error)
+Line 17 in class.dbconnect.php, Undefined property: chipbug\php_demo\DbConnect::$conn  (ErrorException)

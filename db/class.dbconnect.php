@@ -14,7 +14,7 @@ class DbConnect
             // set the PDO error mode to exception
             $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
             logger("Database connection created successfully");
-            return $conn;
+            return $this->conn;
         } catch (PDOException $ex) {
             logger($ex->getMessage());
         }
