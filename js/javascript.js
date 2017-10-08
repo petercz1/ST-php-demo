@@ -22,7 +22,7 @@ function create_db() {
 
 function drop_db() {
   console.log('Inside drop_db');
-  var dbName = $(this).getId();
+  var dbName = $(this).attr('id');
   var data = {
     db: dbName
   };

@@ -51,3 +51,8 @@ line 16 (show_databases.php) Array
 )
 
 line 24 (class.dbConnect.php) killed connection
+line 10 (create_db.php) testing
+line 11 (create_db.php) scrap
+line 15 (class.dbConnect.php) Connected successfully
+line 17 (create_db.php) created db
+line 24 (class.dbConnect.php) killed connection
