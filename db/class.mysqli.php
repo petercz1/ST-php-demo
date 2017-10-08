@@ -8,8 +8,9 @@ class DbConnect
     {
         try {
             // Create connection
-            $conn = new \mysqli('localhost', $username, $password);
-            return
+            $this->conn = new \mysqli('localhost', $username, $password);
+            logger('connected!')
+            return $this-conn;
         } catch (Exception $ex) {
             logger($ex);
         }
