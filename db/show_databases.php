@@ -1,6 +1,8 @@
 <?php
 namespace chipbug\php_demo;
 
+// gets all databases
+
 include 'errors.php';
 include 'credentials.php';
 include 'class.dbConnect.php';

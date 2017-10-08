@@ -1,6 +1,8 @@
 <?php
 namespace chipbug\php_demo;
 
+// drops a database - dangerous!
+
 include 'errors.php';
 include 'credentials.php';
 include 'class.dbConnect.php';
