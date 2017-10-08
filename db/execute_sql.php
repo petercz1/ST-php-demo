@@ -7,10 +7,10 @@ include 'class.dbconnect.php';
 
 logger('testing');
 logger($_GET['sql']);
-$db = $_GET['sql'];
+$name = $_GET['sql'];
 try {
     $db = new DbConnect($username, $password);
-    $sql = 'CREATE DATABASE $db';
+    $sql = 'CREATE DATABASE $name';
     $db->exec($sql);
 } catch (Exception $ex) {
     logger($ex);
