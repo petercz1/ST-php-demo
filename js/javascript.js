@@ -20,6 +20,20 @@ function create_db() {
   $.get('db/create_db.php', data).done(success).fail(oops);
 }
 
+function drop_db(){
+    console.log('Inside drop_db');
+    var dbName = 'test2';
+    var data = {
+      db: dbName
+    };
+    $.get('db/drop_db.php', data).done(dropped_db).fail(oops);
+}
+
+function dropped_db(data){
+    console.log('Inside dropped_db');
+    console.log(data);
+}
+
 function success(echo_results) {
   console.log('Inside success');
   $('#submit').removeClass().addClass('btn btn-success right').text('success!');
