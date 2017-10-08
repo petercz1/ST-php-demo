@@ -11,7 +11,10 @@ $name = $_GET['db'];
 
 $db = new DbConnect($username, $password);
 $sql = "CREATE DATABASE $name";
-$result = $db->conn->query($sql);
+if ($db->conn->query($sql)) {
+} else {
+    logger($db->conn->error);
+}
 $db->kill();
 
 echo 'created...';
