@@ -9,4 +9,3 @@ logger('testing');
 logger($_GET['sql']);
 
 $db = new DbConnect($username, $password);
-$conn = $db->connect();

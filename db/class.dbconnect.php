@@ -7,14 +7,7 @@ use PDO;
 
 class DbConnect
 {
-    private $username;
-    private $password;
-    public function __construct($user, $pw)
-    {
-        $this->username = $user;
-        $this->password = $pw;
-    }
-    public function connect()
+    public function __construct($username, $password)
     {
         try {
             $conn = new \PDO("mysql:host=localhost", $username, $password);
