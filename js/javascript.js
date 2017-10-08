@@ -4,11 +4,12 @@ $(document).ready(do_setup);
 
 function do_setup() {
   console.log('Inside do_setup');
-  $('#submit').click(run_command);
+  $('#submit').click(create_db);
   $('#db_name').click(reset);
+  get_dbs();
 }
 
-function run_command() {
+function create_db() {
   console.log('Inside run_command');
   $('#submit').removeClass().addClass('btn btn-warning right').text('submitting...');
   var dbName = $('#db_name').val();
@@ -33,4 +34,14 @@ function oops(echo_results) {
 function reset() {
   console.log('Inside reset');
   $('#submit').removeClass().addClass('btn btn-primary right').text('submit');
+}
+
+function get_dbs(){
+    console.log('Inside show_dbs');
+    $.get('db/show_databases.php', data).done(show_dbs).fail(oops);
+}
+
+function show_dbs(data){
+    console.log('Inside show_dbs');
+    console.log(data);
 }
