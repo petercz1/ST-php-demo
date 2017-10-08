@@ -4,7 +4,6 @@ namespace chipbug\php_demo;
 // creates a database!
 
 include 'errors.php';
-include 'credentials.php';
 include 'class.dbConnect.php';
 
 logger('testing');
