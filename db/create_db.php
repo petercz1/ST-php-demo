@@ -17,7 +17,7 @@ if ($db->conn->query($sql)) {
     logger('created db');
     echo 'created db';
 } else {
-    logger($db->conn->error);
     echo $db->conn->error;
+    logger($db->conn->error);
 }
 $db->kill();
