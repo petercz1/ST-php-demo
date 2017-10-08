@@ -38,7 +38,7 @@ function reset() {
 
 function get_dbs(){
     console.log('Inside show_dbs');
-    $.get('db/show_databases.php', data).done(show_dbs).fail(oops);
+    $.get('db/show_databases.php').done(show_dbs).fail(oops);
 }
 
 function show_dbs(data){

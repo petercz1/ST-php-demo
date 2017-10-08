@@ -6,3 +6,4 @@ line 8 (create_db.php) testing
 line 9 (create_db.php) test2
 line 12 (class.mysqli.php) connected!
 line 18 (create_db.php) Can't create database 'test2'; database exists
+Line 6 in show_databases.php, include(class.mysqli.php): failed to open stream: No such file or directory  (ErrorException)
