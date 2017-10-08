@@ -168,3 +168,56 @@ line 14 (show_databases.php) Array
 )
 
 line 22 (class.dbConnect.php) killed connection
+line 13 (class.dbConnect.php) Connected successfully
+line 11 (show_databases.php) PDOStatement Object
+(
+    [queryString] => SHOW DATABASES
+)
+
+line 14 (show_databases.php) Array
+(
+    [0] => Array
+        (
+            [Database] => information_schema
+            [0] => information_schema
+        )
+
+    [1] => Array
+        (
+            [Database] => myDB
+            [0] => myDB
+        )
+
+    [2] => Array
+        (
+            [Database] => mysql
+            [0] => mysql
+        )
+
+    [3] => Array
+        (
+            [Database] => performance_schema
+            [0] => performance_schema
+        )
+
+    [4] => Array
+        (
+            [Database] => phpmyadmin
+            [0] => phpmyadmin
+        )
+
+    [5] => Array
+        (
+            [Database] => sys
+            [0] => sys
+        )
+
+    [6] => Array
+        (
+            [Database] => wordpress
+            [0] => wordpress
+        )
+
+)
+
+line 22 (class.dbConnect.php) killed connection
