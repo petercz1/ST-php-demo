@@ -11,8 +11,7 @@ class Db
     public function connect()
     {
         try {
-            global $username;
-            global $password;
+            global $username, $password, $servername;
         // Create connection
         $conn = new \mysqli($servername, $username, $password);
 
