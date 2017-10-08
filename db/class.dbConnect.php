@@ -18,5 +18,6 @@ class DbConnect
     public function kill()
     {
         $this->conn->close();
+        logger('killed connection');
     }
 }
