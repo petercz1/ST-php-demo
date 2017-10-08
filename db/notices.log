@@ -1,3 +1,9 @@
 line 8 (execute_sql.php) testing
 line 9 (execute_sql.php) test2
 Line 10 in class.mysqli.php, Class 'chipbug\php_demo\mysqli' not found  (Error)
+line 8 (execute_sql.php) testing
+line 9 (execute_sql.php) test2
+line 19 (class.mysqli.php) Database created successfully
+line 8 (execute_sql.php) testing
+line 9 (execute_sql.php) test2
+line 21 (class.mysqli.php) Error creating database: Can't create database 'myDB'; database exists
