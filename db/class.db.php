@@ -16,12 +16,13 @@ class Db
             $conn = new \mysqli($servername, $username, $password);
 
             // Create database
-            $sql = "CREATE DATABASE myDB";
+            $sql = "CREATE DATABASE test";
             $result = $conn->query($sql);
             // close conn
             $conn->close();
         } catch (Exception $ex) {
             logger($ex);
+            echo $ex;
         }
     }
 }
