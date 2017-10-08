@@ -12,19 +12,21 @@ class Db
     {
         global $username;
         global $password;
-        try {
-            $conn = new \PDO("mysql:host=localhost", $username, $password);
-            // set the PDO error mode to exception
-            $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-            $sql = "CREATE DATABASE scrap5";
-            // use exec() because no results are returned
-            $conn->exec($sql);
-            logger("hello backend - db created successfully");
-            echo "hello frontend - db created successfully";
-            $conn = null;
-        } catch (Exception $e) {
-            logger($e->getMessage());
-            echo json_encode($e->getMessage());
+        // Create connection
+        $conn = new mysqli($servername, $username, $password);
+        // Check connection
+        if ($conn->connect_error) {
+            die("Connection failed: " . $conn->connect_error);
         }
+
+// Create database
+$sql = "CREATE DATABASE myDB";
+        if ($conn->query($sql) === true) {
+            echo "Database created successfully";
+        } else {
+            echo "Error creating database: " . $conn->error;
+        }
+
+        $conn->close();
     }
 }
