@@ -10,8 +10,8 @@ $sql = "SHOW DATABASES";
 $result = $db->conn->query($sql);
 logger($result);
 if ($result) {
-    logger($result);
-    echo json_encode($result);
+    logger($result->fetchAll());
+    echo json_encode($result->fetchAll());
 } else {
     logger($db->conn->error);
     echo $db->conn->error;
