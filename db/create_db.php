@@ -17,6 +17,7 @@ if ($db->conn->query($sql)) {
     logger('created db');
     echo 'created db';
 } else {
+    echo 'whoops';
     echo $db->conn->error;
     logger($db->conn->error);
 }
