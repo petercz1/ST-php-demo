@@ -4,7 +4,7 @@ $(document).ready(do_setup);
 
 function do_setup() {
   get_dbs();
-  
+
   console.log('Inside do_setup');
   $('#submit').click(create_db);
   $('#db_name').click(reset);
@@ -66,7 +66,7 @@ function show_dbs(data) {
     td.text(db.Database);
     tr.append(td);
     td = $('<td>');
-    var btn = $('<button>');
+    var btn = $('<button id=' + db.Database + '>');
     btn.text('delete');
     btn.addClass("btn btn-danger");
     td.append(btn);
