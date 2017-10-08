@@ -65,6 +65,7 @@ function show_dbs(data){
         console.log(db);
         td.text(db.Database);
         tr.append(td);
+        td.html('<button class="btn btn-danger">delete</button>')
         $('.table tbody').append(tr);
     });
 
