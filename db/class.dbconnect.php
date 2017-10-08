@@ -19,7 +19,7 @@ class DbConnect
             logger($ex->getMessage());
         }
     }
-    public function kill_db()
+    public function kill()
     {
         $conn = null;
     }
