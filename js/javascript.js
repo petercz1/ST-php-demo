@@ -64,8 +64,10 @@ function show_dbs(data){
         var td_db = $('<td>');
         td_db.text(db.Database);
         tr.append(td_db);
-        var td_button = $('<td><button class="btn btn-danger">');
-        td_button.text = 'delete';
+        var td_button = $('<td>');
+        var btn = $('<button class="btn btn-danger">');
+        btn.text = 'delete';
+        td_button.append(btn);
         tr.append(td_button);
         $('.table tbody').append(tr);
     });
