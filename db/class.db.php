@@ -8,25 +8,23 @@ logger('making a db connection');
 
 class Db
 {
-    public function conn()
+    public function connect()
     {
+        try{
         global $username;
         global $password;
         // Create connection
         $conn = new mysqli($servername, $username, $password);
-        // Check connection
-        if ($conn->connect_error) {
-            die("Connection failed: " . $conn->connect_error);
-        }
 
-// Create database
-$sql = "CREATE DATABASE myDB";
-        if ($conn->query($sql) === true) {
-            echo "Database created successfully";
-        } else {
-            echo "Error creating database: " . $conn->error;
-        }
-
+        // Create database
+        $sql = "CREATE DATABASE myDB";
+        $ result = $conn->query($sql);
+        // close conn
         $conn->close();
+    }
+
+        catch(Exception $ex){
+            logger($ex)
+        }
     }
 }
