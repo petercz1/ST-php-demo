@@ -6,3 +6,11 @@ line 7 (class.db.php) making a db connection
 line 7 (execute_sql.php) testing
 line 8 (execute_sql.php) 
 Line 17 in class.db.php, Class 'chipbug\php_demo\mysqli' not found  (Error)
+line 7 (class.db.php) making a db connection
+line 7 (execute_sql.php) testing
+line 8 (execute_sql.php) 
+Line 17 in class.db.php, Undefined variable: servername  (ErrorException)
+line 7 (class.db.php) making a db connection
+line 7 (execute_sql.php) testing
+line 8 (execute_sql.php) 
+Line 17 in class.db.php, Undefined variable: servername  (ErrorException)
