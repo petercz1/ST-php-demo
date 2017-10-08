@@ -2,3 +2,7 @@ line 7 (class.db.php) making a db connection
 line 7 (execute_sql.php) testing
 line 8 (execute_sql.php) select * from users
 line 22 (class.db.php) hello backend - db created successfully
+line 7 (class.db.php) making a db connection
+line 7 (execute_sql.php) testing
+line 8 (execute_sql.php) 
+line 22 (class.db.php) hello backend - db created successfully
