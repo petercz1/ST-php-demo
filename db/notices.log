@@ -1,0 +1,2 @@
+Line 21 in class.db.php, syntax error, unexpected 'result' (T_STRING), expecting variable (T_VARIABLE) or '{' or '$'  (ParseError)
+Line 28 in class.db.php, syntax error, unexpected '}'  (ParseError)

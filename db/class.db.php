@@ -18,7 +18,7 @@ class Db
 
         // Create database
         $sql = "CREATE DATABASE myDB";
-        $ result = $conn->query($sql);
+        $result = $conn->query($sql);
         // close conn
         $conn->close();
     }

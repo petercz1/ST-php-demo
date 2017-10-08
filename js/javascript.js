@@ -5,13 +5,13 @@ $(document).ready(do_setup);
 function do_setup() {
   console.log('Inside do_setup');
   $('#submit').click(run_command);
-  $('#input_command').click(reset);
+  $('#db_name').click(reset);
 }
 
 function run_command() {
   console.log('Inside run_command');
   $('#submit').removeClass().addClass('btn btn-warning right').text('submitting...');
-  var cmd = $('#input_command').val();
+  var cmd = $('#db_name').val();
   var data = {
     sql: cmd
   };
