@@ -2,6 +2,7 @@
 namespace chipbug\php_demo;
 
 // connects to a database and returns a connection object
+
 class DbConnect
 {
     public $conn;
