@@ -58,5 +58,8 @@ function get_dbs(){
 
 function show_dbs(data){
     console.log('Inside show_dbs');
-    console.log(JSON.parse(data));
+    var data = JSON.parse(data);
+    var tr = $('<tr>');
+    $('.table tbody').append(tr);
+
 }
