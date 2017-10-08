@@ -6,8 +6,8 @@ include 'credentials.php';
 include 'class.mysqli.php';
 
 logger('testing');
-logger($_GET['sql']);
-$name = $_GET['sql'];
+logger($_GET['db']);
+$name = $_GET['db'];
 
 $db = new DbConnect($username, $password);
 $sql = "CREATE DATABASE $name";
