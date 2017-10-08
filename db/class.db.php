@@ -12,14 +12,14 @@ class Db
     {
         try {
             global $username, $password, $servername;
-        // Create connection
-        $conn = new \mysqli($servername, $username, $password);
+            // Create connection
+            $conn = new \mysqli($servername, $username, $password);
 
-        // Create database
-        $sql = "CREATE DATABASE myDB";
+            // Create database
+            $sql = "CREATE DATABASE myDB";
             $result = $conn->query($sql);
-        // close conn
-        $conn->close();
+            // close conn
+            $conn->close();
         } catch (Exception $ex) {
             logger($ex);
         }
