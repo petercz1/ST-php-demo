@@ -19,5 +19,3 @@ if ($db->conn->query($sql)) {
     echo $db->conn->error;
 }
 $db->kill();
-
-echo 'created...';
