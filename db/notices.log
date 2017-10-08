@@ -10,3 +10,11 @@ line 12 (show_databases.php) mysqli_result Object
 )
 
 line 21 (class.dbConnect.php) killed connection
+Line 12 in class.dbConnect.php, Class 'chipbug\php_demo\PDO' not found  (Error)
+line 13 (class.dbConnect.php) Connected successfully
+line 12 (show_databases.php) PDOStatement Object
+(
+    [queryString] => SHOW DATABASES
+)
+
+line 22 (class.dbConnect.php) killed connection
