@@ -3,7 +3,7 @@ namespace chipbug\php_demo;
 
 include 'errors.php';
 include 'credentials.php';
-include 'class.mysqli.php';
+include 'class.dbConnect.php';
 
 logger('testing');
 logger($_GET['db']);
