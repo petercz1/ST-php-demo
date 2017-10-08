@@ -34,6 +34,7 @@ function drop_db() {
 function dropped_db(data) {
   console.log('Inside dropped_db');
   console.log(data);
+  do_setup();
 }
 
 function success(echo_results) {
