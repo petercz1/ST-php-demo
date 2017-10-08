@@ -10,9 +10,8 @@ function log_exception(Throwable $e) // for php > 7.0
 {
     global $config;
     $message = "Line {$e->getLine()} in " . basename($e->getFile()) . ", {$e->getMessage()}  (" . get_class($e) . ")";
-
     file_put_contents($config["app_dir"] . "notices.log", $message . PHP_EOL, FILE_APPEND);
-    header("Location: {$config["error_page"]}");
+    //header("Location: {$config["error_page"]}");
     exit();
 }
 
