@@ -7,9 +7,13 @@ use PDO;
 
 class DbConnect
 {
-    private $username, $password;
-    $this->username = $username;
-    $this->password = $password;
+    private $username;
+    private $password;
+    public function __construct($user, $pw)
+    {
+        $this->username = $user;
+        $this->password = $pw;
+    }
     public function connect()
     {
         try {

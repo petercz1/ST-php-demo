@@ -1,3 +1,4 @@
-Line 10 in class.dbconnect.php, syntax error, unexpected '$username' (T_VARIABLE), expecting function (T_FUNCTION)  (ParseError)
-Line 10 in class.dbconnect.php, syntax error, unexpected '$username' (T_VARIABLE), expecting function (T_FUNCTION)  (ParseError)
-Line 11 in class.dbconnect.php, syntax error, unexpected '$this' (T_VARIABLE), expecting function (T_FUNCTION)  (ParseError)
+line 5 (class.dbconnect.php) root
+line 8 (execute_sql.php) testing
+line 9 (execute_sql.php) test2
+Line 12 in class.dbconnect.php, Missing argument 1 for chipbug\php_demo\DbConnect::__construct(), called in /home/pc/data/sites/teaching/GA/WDI/wdi_hk_14/sites/php_demo/db/execute_sql.php on line 11 and defined  (ErrorException)
