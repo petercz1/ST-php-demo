@@ -1,8 +1,9 @@
 line 8 (execute_sql.php) testing
 line 9 (execute_sql.php) test2
 line 12 (class.mysqli.php) connected!
-Line 14 in execute_sql.php, Call to undefined method mysqli::exec()  (Error)
 line 8 (execute_sql.php) testing
 line 9 (execute_sql.php) test2
 line 12 (class.mysqli.php) connected!
-Line 14 in execute_sql.php, Call to undefined method chipbug\php_demo\DbConnect::exec()  (Error)
+line 8 (execute_sql.php) testing
+line 9 (execute_sql.php) test2
+line 12 (class.mysqli.php) connected!

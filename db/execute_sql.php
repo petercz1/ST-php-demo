@@ -11,5 +11,5 @@ $name = $_GET['sql'];
 
 $db = new DbConnect($username, $password);
 $sql = "CREATE DATABASE $name";
-$db->conn->exec($sql);
+$db->conn->query($sql);
 $db->kill();
