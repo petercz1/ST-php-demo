@@ -12,6 +12,7 @@ try {
     $db = new DbConnect($username, $password);
     $sql = "CREATE DATABASE $name";
     $db->conn->exec($sql);
+    $db->kill();
 } catch (Exception $ex) {
     logger($ex);
     echo $ex;
