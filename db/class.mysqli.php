@@ -1,17 +1,13 @@
 <?php
 namespace chipbug\php_demo;
 
-include 'errors.php';
-include 'credentials.php';
-include 'class.dbconnect.php';
-
 class DbConnect
 {
     public $conn;
     public function __construct($username, $password)
     {
         // Create connection
-        $conn = new mysqli('localhost', $username, $password);
+        $conn = new \mysqli('localhost', $username, $password);
         // Check connection
         if ($conn->connect_error) {
             die("Connection failed: " . $conn->connect_error);
