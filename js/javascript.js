@@ -6,7 +6,6 @@ function do_setup() {
   $('*').off('click');
   console.log('Inside do_setup');
   get_dbs();
-  $('.delete_db').click(drop_db);
   $('#submit').click(create_db);
   $('#db_name').click(reset);
 }
@@ -77,5 +76,6 @@ function show_dbs(data) {
     tr.append(td);
     $('.table tbody').append(tr);
   });
+  $('.delete_db').click(drop_db);
 
 }
