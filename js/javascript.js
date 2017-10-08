@@ -3,12 +3,11 @@ console.log('js loaded');
 $(document).ready(do_setup);
 
 function do_setup() {
-  get_dbs();
-
   console.log('Inside do_setup');
+  get_dbs();
+  $('.delete_db').click(drop_db);
   $('#submit').click(create_db);
   $('#db_name').click(reset);
-  $('#drop_db').click(drop_db);
 }
 
 function create_db() {
@@ -23,7 +22,7 @@ function create_db() {
 
 function drop_db() {
   console.log('Inside drop_db');
-  var dbName = 'test2';
+  var dbName = $(this).getId();
   var data = {
     db: dbName
   };
