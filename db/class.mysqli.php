@@ -6,11 +6,13 @@ class DbConnect
     public $conn;
     public function __construct($username, $password)
     {
-        // Create connection
-        $conn = new \mysqli('localhost', $username, $password);
-        // Check connection
-        if ($conn->connect_error) {
-            die("Connection failed: " . $conn->connect_error);
+        try {
+            // Create connection
+            $conn = new \mysqli('localhost', $username, $password);
+            // Check connection
+$conn->connect_error;
+        } catch (Exception $ex) {
+            logger($ex);
         }
 
         // Create database
