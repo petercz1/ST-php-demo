@@ -6,7 +6,7 @@ include 'credentials.php';
 include 'class.dbConnect.php';
 
 $db = new DbConnect($username, $password);
-$sql = "SHOW DATABASES";
+$sql = "SELECT schema_name FROM information_schema.schemata";
 $result = $db->conn->query($sql);
 if ($result) {
     logger($result);

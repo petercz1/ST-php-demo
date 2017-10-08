@@ -1,14 +1,4 @@
-line 12 (class.dbConnect.php) connected!
-line 12 (show_databases.php) mysqli_result Object
-(
-    [current_field] => 0
-    [field_count] => 1
-    [lengths] => 
-    [num_rows] => 8
-    [type] => 0
-)
 
-Line 13 in show_databases.php, Object of class mysqli_result could not be converted to string  (ErrorException)
 line 12 (class.dbConnect.php) connected!
 line 12 (show_databases.php) mysqli_result Object
 (
