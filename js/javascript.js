@@ -6,6 +6,7 @@ function do_setup() {
   console.log('Inside do_setup');
   $('#submit').click(create_db);
   $('#db_name').click(reset);
+  $('#drop_db').click(drop_db);
   get_dbs();
 }
 
