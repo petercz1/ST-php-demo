@@ -1,9 +1,7 @@
 line 8 (create_db.php) testing
 line 9 (create_db.php) test2
-Line 11 in class.mysqli.php, mysqli::__construct(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: YES)  (ErrorException)
-line 8 (create_db.php) testing
-line 9 (create_db.php) test2
-Line 11 in class.mysqli.php, mysqli::__construct(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: YES)  (ErrorException)
+line 12 (class.mysqli.php) connected!
+line 15 (create_db.php) created db
 line 8 (create_db.php) testing
 line 9 (create_db.php) test2
 line 12 (class.mysqli.php) connected!
