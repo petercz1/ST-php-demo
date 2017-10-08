@@ -8,6 +8,7 @@ include 'class.dbConnect.php';
 $db = new DbConnect($username, $password);
 $sql = "SHOW DATABASES";
 $result = $db->conn->query($sql);
+logger($result);
 if ($result) {
     logger($result);
     echo json_encode($result);
