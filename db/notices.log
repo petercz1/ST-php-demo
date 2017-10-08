@@ -1,9 +1,22 @@
-line 8 (create_db.php) testing
-line 9 (create_db.php) test2
-line 12 (class.mysqli.php) connected!
-line 15 (create_db.php) created db
-line 8 (create_db.php) testing
-line 9 (create_db.php) test2
-line 12 (class.mysqli.php) connected!
-line 18 (create_db.php) Can't create database 'test2'; database exists
-Line 6 in show_databases.php, include(class.mysqli.php): failed to open stream: No such file or directory  (ErrorException)
+line 12 (class.dbConnect.php) connected!
+line 12 (show_databases.php) mysqli_result Object
+(
+    [current_field] => 0
+    [field_count] => 1
+    [lengths] => 
+    [num_rows] => 8
+    [type] => 0
+)
+
+Line 13 in show_databases.php, Object of class mysqli_result could not be converted to string  (ErrorException)
+line 12 (class.dbConnect.php) connected!
+line 12 (show_databases.php) mysqli_result Object
+(
+    [current_field] => 0
+    [field_count] => 1
+    [lengths] => 
+    [num_rows] => 8
+    [type] => 0
+)
+
+line 21 (class.dbConnect.php) killed connection
