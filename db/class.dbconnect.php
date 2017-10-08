@@ -7,7 +7,9 @@ use PDO;
 
 class DbConnect
 {
-    global $username, $password;
+    $username, $password
+    $this->username = $username;
+    $this->password = $password;
     public function connect()
     {
         try {
