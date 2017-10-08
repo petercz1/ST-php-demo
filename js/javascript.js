@@ -60,7 +60,8 @@ function show_dbs(data){
     console.log('Inside show_dbs');
     var data = JSON.parse(data);
     var td = $('<td>');
-    $.each(data, function(db){
+    $.each(data, function(index,db){
+        console.log(db);
         td.text(db.Database);
     });
     var tr = $('<tr>');
