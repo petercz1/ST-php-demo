@@ -61,15 +61,15 @@ function show_dbs(data){
     var data = JSON.parse(data);
     $.each(data, function(index,db){
         var tr = $('<tr>');
-        var td_db = $('<td>');
-        td_db.text(db.Database);
-        tr.append(td_db);
+        var td = $('<td>');
+        td.text(db.Database);
+        tr.append(td);
         td = $('<td>');
         var btn = $('<button>');
         btn.text('delete');
         btn.addClass("btn btn-danger");
-        td_button.append(btn);
-        tr.append(td_button);
+        td.append(btn);
+        tr.append(td);
         $('.table tbody').append(tr);
     });
 
