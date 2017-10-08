@@ -18,6 +18,9 @@ class DbConnect
         } catch (PDOException $ex) {
             logger($ex->getMessage());
         }
+    }
+    public function kill_db()
+    {
         $conn = null;
     }
 }
