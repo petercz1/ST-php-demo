@@ -20,9 +20,9 @@ class DbConnect
         // Create database
         $sql = "CREATE DATABASE myDB";
         if ($conn->query($sql) === true) {
-            echo "Database created successfully";
+            logger("Database created successfully");
         } else {
-            echo "Error creating database: " . $conn->error;
+            logger("Error creating database: " . $conn->error);
         }
 
         $conn->close();
