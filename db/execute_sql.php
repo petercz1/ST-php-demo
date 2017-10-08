@@ -10,9 +10,9 @@ logger($_GET['sql']);
 $name = $_GET['sql'];
 try {
     $db = new DbConnect($username, $password);
-    $sql = "CREATE DATABASE $name";
-    $db->conn->exec($sql);
-    $db->kill();
+    // $sql = "CREATE DATABASE $name";
+    // $db->conn->exec($sql);
+    // $db->kill();
 } catch (Exception $ex) {
     logger($ex);
     echo $ex;
