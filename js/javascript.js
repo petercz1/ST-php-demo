@@ -60,6 +60,7 @@ function get_dbs() {
 
 function show_dbs(data) {
   console.log('Inside show_dbs');
+  $('.table tbody').html('');
   var data = JSON.parse(data);
   $.each(data, function(index, db) {
     var tr = $('<tr>');
