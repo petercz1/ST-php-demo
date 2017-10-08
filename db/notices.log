@@ -1,9 +1,3 @@
 line 8 (execute_sql.php) testing
 line 9 (execute_sql.php) test2
-line 12 (class.mysqli.php) connected!
-line 8 (execute_sql.php) testing
-line 9 (execute_sql.php) test2
-line 12 (class.mysqli.php) connected!
-line 8 (execute_sql.php) testing
-line 9 (execute_sql.php) test2
-line 12 (class.mysqli.php) connected!
+Line 11 in class.mysqli.php, mysqli::__construct(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: YES)  (ErrorException)
