@@ -13,6 +13,7 @@ class DbConnect
             return $this->conn;
         } catch (Exception $ex) {
             logger($ex);
+            echo $ex;
         }
     }
     public function kill()
