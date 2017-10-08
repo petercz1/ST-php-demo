@@ -66,6 +66,7 @@ function show_dbs(data){
         tr.append(td_db);
         var td_button = $('<td><button class="btn btn-danger">');
         td_button.text = 'delete';
+        tr.append(td_button);
         $('.table tbody').append(tr);
     });
 
