@@ -1,21 +1,2 @@
-line 26 (class.dbConnect.php) killed connection
-line 17 (class.dbConnect.php) Connected successfully
-line 26 (class.dbConnect.php) killed connection
-line 15 (drop_user.php) dropped user bertie
-line 17 (class.dbConnect.php) Connected successfully
-line 9 (drop_user.php) bertie
-line 26 (class.dbConnect.php) killed connection
-line 17 (class.dbConnect.php) Connected successfully
-line 26 (class.dbConnect.php) killed connection
-line 15 (drop_user.php) dropped user bobby
-line 17 (class.dbConnect.php) Connected successfully
-line 9 (drop_user.php) bobby
-line 26 (class.dbConnect.php) killed connection
-line 17 (class.dbConnect.php) Connected successfully
-Line 17 in create_user.php, Undefined variable: user  (ErrorException)line 17 (class.dbConnect.php) Connected successfully
-line 11 (create_user.php) Creating bertie: berties1
+Line 17 in create_user.php, Undefined variable: user  (ErrorException)line 11 (create_user.php) Creating bertie: berties1
 line 8 (create_user.php) testing
-line 26 (class.dbConnect.php) killed connection
-line 17 (class.dbConnect.php) Connected successfully
-line 26 (class.dbConnect.php) killed connection
-line 17 (class.dbConnect.php) Connected successfully

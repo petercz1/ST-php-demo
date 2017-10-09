@@ -12,9 +12,8 @@ class DbConnect
     {
         try {
             $this->conn = new \PDO("mysql:host=localhost", $admin_name, $admin_pass);
-            // set the PDO error mode to exception
             $this->conn->setAttribute(\PDO::ATTR_ERRMODE, \PDO::ERRMODE_EXCEPTION);
-            logger("Connected successfully");
+            //logger("Connected successfully");
             return $this->conn;
         } catch (PDOException $e) {
             logger("Connection failed: " . $e->getMessage());
@@ -23,6 +22,6 @@ class DbConnect
     public function kill()
     {
         $this->conn = null;
-        logger('killed connection');
+        //logger('killed connection');
     }
 }
