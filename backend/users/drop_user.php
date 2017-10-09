@@ -8,8 +8,8 @@ include '../common/class.dbConnect.php';
 $user = $_GET['user'];
 logger($user);
 
-$db = new DbConnect($username, $password);
-$sql = "DROP USER $user";
+$db = new DbConnect($admin_name, $admin_pass);
+$sql = "DROP USER $user@'localhost'";
 if ($db->conn->query($sql)) {
     logger("dropped user $user");
     echo "dropped user $user";

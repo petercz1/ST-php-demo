@@ -1,3 +1,0 @@
-line 26 (class.dbConnect.php) killed connection
-line 17 (class.dbConnect.php) Connected successfully
-Line 11 in drop_user.php, Undefined variable: username  (ErrorException)line 9 (drop_user.php) bobby
