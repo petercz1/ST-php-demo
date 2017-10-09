@@ -1,7 +1,7 @@
 <?php
 namespace chipbug\php_demo;
 
-// gets all databases
+// gets all users
 
 include '../common/class.dbConnect.php';
 

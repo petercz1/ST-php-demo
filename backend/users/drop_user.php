@@ -1,7 +1,7 @@
 <?php
 namespace chipbug\php_demo;
 
-// drops a database - dangerous!
+// drops a user - dangerous!
 
 include '../common/class.dbConnect.php';
 

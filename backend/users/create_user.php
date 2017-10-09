@@ -1,7 +1,7 @@
 <?php
 namespace chipbug\php_demo;
 
-// creates a database!
+// creates a user!
 
 include '../common/class.dbConnect.php';
 
