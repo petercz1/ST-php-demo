@@ -5,7 +5,7 @@ namespace chipbug\php_demo;
 
 include '../common/class.dbConnect.php';
 
-$db = new DbConnect();
+$db = new DbConnect($admin_name, $admin_pass);
 $sql = "SELECT User FROM mysql.user;";
 $result = $db->conn->query($sql);
 if ($result) {

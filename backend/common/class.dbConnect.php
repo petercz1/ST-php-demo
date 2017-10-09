@@ -8,11 +8,10 @@ include 'credentials.php';
 class DbConnect
 {
     public $conn;
-    public function __construct()
+    public function __construct($admin_name, $admin_pass)
     {
         try {
-            global $admin_name, $admin_pass;
-            $this->conn = new \PDO("mysql:host=localhost", $this->admin_name, $this->admin_pass);
+            $this->conn = new \PDO("mysql:host=localhost", $admin_name, $admin_pass);
             // set the PDO error mode to exception
             $this->conn->setAttribute(\PDO::ATTR_ERRMODE, \PDO::ERRMODE_EXCEPTION);
             logger("Connected successfully");
