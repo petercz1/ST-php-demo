@@ -4,7 +4,7 @@
 function log_exception(Throwable $e) // for php => 7.0
 {
     $message = "Line {$e->getLine()} in " . basename($e->getFile()) . ", {$e->getMessage()}  (" . get_class($e) . ")";
-    prepend_message($message);
+    append_message($message);
     exit();
 }
 
@@ -12,7 +12,7 @@ function logger($message)
 {
     $debug_arr = debug_backtrace();
     $prepend = 'line ' . $debug_arr[0]['line'] . ' ('. basename($debug_arr[0]['file']) .') ' . print_r($message, true) . PHP_EOL;
-    prepend_message($prepend);
+    append_message($prepend);
 }
 
 function log_error($num, $str, $file, $line, $context = null)
@@ -28,10 +28,10 @@ function check_for_fatal()
     }
 }
 
-function prepend_message($message)
+function append_message($message)
 {
     $fileContents = file_get_contents($_SERVER['DOCUMENT_ROOT'] . "/backend/common/notices.log");
-    file_put_contents($_SERVER['DOCUMENT_ROOT'] . "/backend/common/notices.log", $message.$fileContents);
+    file_put_contents($_SERVER['DOCUMENT_ROOT'] . "/backend/common/notices.log", $fileContents.$message);
 }
 
 register_shutdown_function("check_for_fatal");
