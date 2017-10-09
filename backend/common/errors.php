@@ -8,11 +8,17 @@ function log_exception(Throwable $e) // for php => 7.0
     exit();
 }
 
+function logger($message)
+{
+    $debug_arr = debug_backtrace();
+    $prepend = 'line ' . $debug_arr[0]['line'] . ' ('. basename($debug_arr[0]['file']) .') ' . print_r($message, true) . PHP_EOL;
+    prepend_message($prepend);
+}
+
 function log_error($num, $str, $file, $line, $context = null)
 {
     log_exception(new ErrorException($str, 0, $num, $file, $line));
 }
-
 
 function check_for_fatal()
 {
@@ -20,13 +26,6 @@ function check_for_fatal()
     if ($error["type"] == E_ERROR) {
         log_error($error["type"], $error["message"], $error["file"], $error["line"]);
     }
-}
-
-function logger($message)
-{
-    $debug_arr = debug_backtrace();
-    $prepend = 'line ' . $debug_arr[0]['line'] . ' ('. basename($debug_arr[0]['file']) .') ' . print_r($message, true) . PHP_EOL;
-    prepend_message($prepend);
 }
 
 function prepend_message($message)
