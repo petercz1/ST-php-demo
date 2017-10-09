@@ -5,13 +5,11 @@ namespace chipbug\php_demo;
 
 include '../common/class.dbConnect.php';
 
-
-logger('testing');
-logger($_GET['db']);
-$name = $_GET['db'];
+$name = $_GET['user'];
+logger($user);
 
 $db = new DbConnect($username, $password);
-$sql = "DROP DATABASE $name";
+$sql = "DROP USER $name";
 if ($db->conn->query($sql)) {
     logger('dropped db');
     echo 'dropped db';
