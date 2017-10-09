@@ -35,7 +35,7 @@ function logger($message)
 function prepend_message($message)
 {
     $fileContents = file_get_contents($_SERVER['DOCUMENT_ROOT'] . "backend/common/notices.log");
-    file_put_contents($_SERVER['DOCUMENT_ROOT'] . "backend/common/notices.log", $prepend.$fileContents);
+    file_put_contents($_SERVER['DOCUMENT_ROOT'] . "backend/common/notices.log", $message.$fileContents);
 }
 
 register_shutdown_function("check_for_fatal");
