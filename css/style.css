@@ -8,6 +8,10 @@
     width: 100%;
 }
 
+.half_width{
+    width: 50%;
+}
+
 .full_width *{
     margin: 0.2em;
 }
