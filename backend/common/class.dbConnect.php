@@ -11,7 +11,7 @@ class DbConnect
     public function __construct($admin_name, $admin_pass)
     {
         try {
-            $this->conn = new \PDO("mysql:host=localhost", $username, $password);
+            $this->conn = new \PDO("mysql:host=localhost", $admin_nane, $admin_pass);
             // set the PDO error mode to exception
             $this->conn->setAttribute(\PDO::ATTR_ERRMODE, \PDO::ERRMODE_EXCEPTION);
             logger("Connected successfully");

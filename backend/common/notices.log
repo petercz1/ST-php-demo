@@ -1,1 +1,1 @@
-Line 14 in class.dbConnect.php, Undefined variable: username  (ErrorException)Line 11 in drop_user.php, Undefined variable: username  (ErrorException)line 9 (drop_user.php) bobby
+Line 14 in class.dbConnect.php, Undefined variable: admin_nane  (ErrorException)Line 14 in class.dbConnect.php, Undefined variable: username  (ErrorException)

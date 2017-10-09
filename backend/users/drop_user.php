@@ -9,10 +9,10 @@ $user = $_GET['user'];
 logger($user);
 
 $db = new DbConnect($username, $password);
-$sql = "DROP USER $name";
+$sql = "DROP USER $user";
 if ($db->conn->query($sql)) {
-    logger("dropped user $name");
-    echo "dropped user $name";
+    logger("dropped user $user");
+    echo "dropped user $user";
 } else {
     logger($db->conn->error);
     echo $db->conn->error;
