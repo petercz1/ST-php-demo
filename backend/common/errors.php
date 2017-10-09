@@ -1,17 +1,18 @@
 <?php
 
-function log_error($num, $str, $file, $line, $context = null)
-{
-    log_exception(new ErrorException($str, 0, $num, $file, $line));
-}
-
 //function log_exception(Exception $e) // for php < 7.0
-function log_exception(Throwable $e) // for php > 7.0
+function log_exception(Throwable $e) // for php => 7.0
 {
     $message = "Line {$e->getLine()} in " . basename($e->getFile()) . ", {$e->getMessage()}  (" . get_class($e) . ")";
     prepend_message($message);
     exit();
 }
+
+function log_error($num, $str, $file, $line, $context = null)
+{
+    log_exception(new ErrorException($str, 0, $num, $file, $line));
+}
+
 
 function check_for_fatal()
 {
