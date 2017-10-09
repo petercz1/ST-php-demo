@@ -9,7 +9,8 @@
 }
 
 .half_width{
-    width: 50%;
+    width: 50% !important;
+    float: left;
 }
 
 .full_width *{
