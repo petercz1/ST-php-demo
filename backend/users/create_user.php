@@ -11,10 +11,10 @@ $pass = $_GET['pass'];
 logger($name . ': ' . $pass);
 
 $db = new DbConnect($admin_name, $admin_pass);
-$sql = "CREATE DATABASE $name";
+$sql = "CREATE USER $name@localhost IDENTIFIED BY $pass";
 if ($db->conn->query($sql)) {
-    logger('created db');
-    echo 'created db';
+    logger("created user $user");
+    echo "created user $user" ;
 } else {
     echo 'whoops';
     echo $db->conn->error;
