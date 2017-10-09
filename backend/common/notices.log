@@ -1,0 +1,1 @@
+Line 15 in class.dbConnect.php, Undefined property: chipbug\php_demo\DbConnect::$admin_name  (ErrorException)
