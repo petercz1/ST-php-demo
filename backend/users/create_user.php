@@ -6,11 +6,11 @@ namespace chipbug\php_demo;
 include '../common/class.dbConnect.php';
 
 logger('testing');
-logger($_GET['user']);
 $name = $_GET['user'];
 $pass = $_GET['pass'];
+logger($name . ': ' . $pass);
 
-$db = new DbConnect($username, $password);
+$db = new DbConnect($admin_name, $admin_pass);
 $sql = "CREATE DATABASE $name";
 if ($db->conn->query($sql)) {
     logger('created db');
