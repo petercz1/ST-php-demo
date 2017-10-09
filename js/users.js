@@ -7,7 +7,7 @@ function do_setup() {
   console.log('Inside do_setup');
   get_users();
   $('#submit').click(create_user);
-  $('#db_name').click(reset);
+  $('#user_name').click(reset);
 }
 
 function create_db() {
