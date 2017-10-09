@@ -63,14 +63,14 @@ function show_users(users) {
   console.log('Inside show_users');
   $('.table tbody').html('');
   console.log(users);
-  var databases = JSON.parse(users); // convert text response to JSON
+  var users = JSON.parse(users); // convert text response to JSON
   $.each(users, function(index, user) {
     var tr = $('<tr>');
     var td = $('<td>'); // make first <td>, add db name
-    td.text(user.Database);
+    td.text(user.User);
     tr.append(td);
     td = $('<td>'); //make second <td>, add button with id of dbase name
-    var btn = $('<button class="delete_user" id=' + database.Database + '>');
+    var btn = $('<button class="delete_user" id=' + user.User + '>');
     btn.text('delete');
     btn.addClass("btn btn-danger");
     td.append(btn);
