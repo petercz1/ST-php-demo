@@ -1,0 +1,1 @@
+Line 11 in class.dbConnect.php, Missing argument 1 for chipbug\php_demo\DbConnect::__construct(), called in /home/pc/data/sites/teaching/GA/WDI/wdi_hk_14/sites/php_demo/backend/users/show_users.php on line 8 and defined  (ErrorException)
