@@ -77,6 +77,6 @@ function show_users(users) {
     tr.append(td);
     $('.table tbody').append(tr);
   });
-  $('.delete_user').click(drop_db);
+  $('.delete_user').click(drop_user);
 
 }
