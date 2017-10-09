@@ -17,7 +17,7 @@ function create_db() {
   var data = {
     db: dbName
   };
-  $.get('backend/db/create_db.php', data).done(success).fail(oops);
+  $.get('backend/db/create_user.php', data).done(success).fail(oops);
 }
 
 function drop_db() {
@@ -27,7 +27,7 @@ function drop_db() {
   var data = {
     db: dbName
   };
-  $.get('backend/db/drop_db.php', data).done(dropped_db).fail(oops);
+  $.get('backend/db/drop_user.php', data).done(dropped_db).fail(oops);
 }
 
 function dropped_db(data) {
@@ -56,7 +56,7 @@ function reset() {
 
 function get_dbs() {
   console.log('Inside show_dbs');
-  $.get('backend/db/show_databases.php').done(show_dbs).fail(oops);
+  $.get('backend/db/show_users.php').done(show_dbs).fail(oops);
 }
 
 function show_dbs(databases) {
