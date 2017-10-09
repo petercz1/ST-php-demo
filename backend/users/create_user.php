@@ -11,7 +11,7 @@ $pass = $_GET['pass'];
 logger("Creating $name: $pass");
 
 $db = new DbConnect($admin_name, $admin_pass);
-$sql = "CREATE USER $name@localhost IDENTIFIED BY $pass";
+$sql = "CREATE USER '$name'@'localhost' IDENTIFIED BY '$pass'";
 if ($db->conn->query($sql)) {
     logger("created user $user");
     echo "created user $user" ;
