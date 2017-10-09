@@ -10,12 +10,12 @@ function do_setup() {
   $('#user_name').click(reset);
 }
 
-function create_db() {
-  console.log('Inside run_command');
+function create_user() {
+  console.log('Inside create_user');
   $('#submit').removeClass().addClass('btn btn-warning right').text('submitting...');
-  var dbName = $('#db_name').val();
+  var userName = $('#user_name').val();
   var data = {
-    db: dbName
+    user: userName
   };
   $.get('backend/db/create_user.php', data).done(success).fail(oops);
 }
