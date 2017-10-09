@@ -62,6 +62,8 @@ function get_dbs() {
 function show_dbs(databases) {
   console.log('Inside show_dbs');
   $('.table tbody').html('');
+  console.log(databases);
+
   var databases = JSON.parse(databases); // convert text response to JSON
   $.each(databases, function(index, database) {
     var tr = $('<tr>');
