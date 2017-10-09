@@ -1,1 +1,8 @@
+line 26 (class.dbConnect.php) killed connection
+line 17 (class.dbConnect.php) Connected successfully
+Line 15 in create_user.php, SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'bobby1' at line 1  (PDOException)line 17 (class.dbConnect.php) Connected successfully
+line 11 (create_user.php) Creating bobby: bobby1
+line 8 (create_user.php) testing
+line 26 (class.dbConnect.php) killed connection
+line 17 (class.dbConnect.php) Connected successfully
 Line 8 in show_users.php, Undefined variable: admin_user  (ErrorException)
