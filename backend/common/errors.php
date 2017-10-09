@@ -28,8 +28,12 @@ function logger($message)
     global $config;
     $debug_arr = debug_backtrace();
     $prepend = 'line ' . $debug_arr[0]['line'] . ' ('. basename($debug_arr[0]['file']) .') ' . print_r($message, true) . PHP_EOL;
+    $prepend_message($prepend);
+}
+
+function $prepend_message($message){
     $fileContents = file_get_contents("backend/common/notices.log");
-    file_put_contents($config["app_dir"] . "backend/common/notices.log", $prepend.$fileContents);
+    file_put_contents("backend/common/notices.log", $prepend.$fileContents);
 }
 
 register_shutdown_function("check_for_fatal");
