@@ -7,6 +7,7 @@ include 'credentials.php';
 
 class DbConnect
 {
+    global $admin_name, $admin_pass;
     public $conn;
     public function __construct()
     {
