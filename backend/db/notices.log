@@ -24,3 +24,5 @@ Line 37 in errors.php, Undefined variable: config  (ErrorException)
 Line 37 in errors.php, Undefined variable: config  (ErrorException)
 Line 37 in errors.php, Undefined variable: config  (ErrorException)
 Line 37 in errors.php, Undefined variable: config  (ErrorException)
+line 17 (class.dbConnect.php) Connected successfully
+line 26 (class.dbConnect.php) killed connection
