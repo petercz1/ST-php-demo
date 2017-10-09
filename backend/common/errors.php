@@ -8,11 +8,8 @@ function log_error($num, $str, $file, $line, $context = null)
 //function log_exception(Exception $e) // for php < 7.0
 function log_exception(Throwable $e) // for php > 7.0
 {
-    //global $config;
     $message = "Line {$e->getLine()} in " . basename($e->getFile()) . ", {$e->getMessage()}  (" . get_class($e) . ")";
     prepend_message($message);
-    //file_put_contents($config["app_dir"] . "notices.log", $message . PHP_EOL, FILE_APPEND);
-    //header("Location: {$config["error_page"]}");
     exit();
 }
 
@@ -26,7 +23,6 @@ function check_for_fatal()
 
 function logger($message)
 {
-    //global $config;
     $debug_arr = debug_backtrace();
     $prepend = 'line ' . $debug_arr[0]['line'] . ' ('. basename($debug_arr[0]['file']) .') ' . print_r($message, true) . PHP_EOL;
     prepend_message($prepend);
