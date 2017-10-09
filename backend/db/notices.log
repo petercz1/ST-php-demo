@@ -1,0 +1,25 @@
+line 8 (create_db.php) testing
+line 9 (create_db.php) woohoo2
+line 17 (class.dbConnect.php) Connected successfully
+line 15 (create_db.php) created db
+line 26 (class.dbConnect.php) killed connection
+line 17 (class.dbConnect.php) Connected successfully
+line 26 (class.dbConnect.php) killed connection
+line 9 (drop_db.php) testing
+line 10 (drop_db.php) woohoo2
+line 17 (class.dbConnect.php) Connected successfully
+line 16 (drop_db.php) dropped db
+line 26 (class.dbConnect.php) killed connection
+line 17 (class.dbConnect.php) Connected successfully
+line 26 (class.dbConnect.php) killed connection
+line 9 (drop_db.php) testing
+line 10 (drop_db.php) woohoo
+line 17 (class.dbConnect.php) Connected successfully
+line 16 (drop_db.php) dropped db
+line 26 (class.dbConnect.php) killed connection
+line 17 (class.dbConnect.php) Connected successfully
+line 26 (class.dbConnect.php) killed connection
+Line 37 in errors.php, Undefined variable: config  (ErrorException)
+Line 37 in errors.php, Undefined variable: config  (ErrorException)
+Line 37 in errors.php, Undefined variable: config  (ErrorException)
+Line 37 in errors.php, Undefined variable: config  (ErrorException)

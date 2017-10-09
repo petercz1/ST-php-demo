@@ -27,7 +27,28 @@ function logger($message)
 {
     global $config;
     $debug_arr = debug_backtrace();
-    file_put_contents($config["app_dir"] . "notices.log", 'line ' . $debug_arr[0]['line'] . ' ('. basename($debug_arr[0]['file']) .') ' . print_r($message, true) . PHP_EOL, FILE_APPEND);
+    prepend_message('line ' . $debug_arr[0]['line'] . ' ('. basename($debug_arr[0]['file']) .') ' . print_r($message, true));
+    //file_put_contents($config["app_dir"] . "notices.log", 'line ' . $debug_arr[0]['line'] . ' ('. basename($debug_arr[0]['file']) .') ' . print_r($message, true) . PHP_EOL, FILE_APPEND);
+}
+
+function prepend_message($message)
+{
+    $cache_new = $message; // this gets prepended
+    $file = $config["app_dir"] . "notices.log"; // the file to which $cache_new gets prepended
+
+    $handle = fopen($file, "r+");
+    $len = strlen($cache_new);
+    $final_len = filesize($file) + $len;
+    $cache_old = fread($handle, $len);
+    rewind($handle);
+    $i = 1;
+    while (ftell($handle) < $final_len) {
+        fwrite($handle, $cache_new);
+        $cache_new = $cache_old;
+        $cache_old = fread($handle, $len);
+        fseek($handle, $i * $len);
+        $i++;
+    }
 }
 
 register_shutdown_function("check_for_fatal");

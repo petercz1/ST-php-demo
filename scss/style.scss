@@ -1,0 +1,25 @@
+.right{
+    float: right;
+}
+.left{
+    float:left;
+}
+.full_width{
+    width: 100%;
+}
+
+.full_width *{
+    margin: 0.2em;
+}
+
+#input_command{
+    display: block;
+    margin: auto;
+}
+
+#submit{
+    width: 10em;
+}
+td{
+    width: 100%;
+}

@@ -1,7 +1,9 @@
 .right{
     float: right;
 }
-
+.left{
+    float:left;
+}
 .full_width{
     width: 100%;
 }

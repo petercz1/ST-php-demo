@@ -2,6 +2,8 @@
 namespace chipbug\php_demo;
 
 // connects to a database and returns a connection object
+include 'errors.php';
+include 'credentials.php';
 
 class DbConnect
 {

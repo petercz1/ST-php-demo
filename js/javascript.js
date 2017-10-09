@@ -17,18 +17,17 @@ function create_db() {
   var data = {
     db: dbName
   };
-  $.get('db/create_db.php', data).done(success).fail(oops);
+  $.get('backend/db/create_db.php', data).done(success).fail(oops);
 }
 
 function drop_db() {
   console.log('Inside drop_db');
   var dbName = $(this).attr('id');
   console.log(dbName);
-
   var data = {
     db: dbName
   };
-  $.get('db/drop_db.php', data).done(dropped_db).fail(oops);
+  $.get('backend/db/drop_db.php', data).done(dropped_db).fail(oops);
 }
 
 function dropped_db(data) {
@@ -57,20 +56,20 @@ function reset() {
 
 function get_dbs() {
   console.log('Inside show_dbs');
-  $.get('db/show_databases.php').done(show_dbs).fail(oops);
+  $.get('backend/db/show_databases.php').done(show_dbs).fail(oops);
 }
 
-function show_dbs(data) {
+function show_dbs(databases) {
   console.log('Inside show_dbs');
   $('.table tbody').html('');
-  var data = JSON.parse(data);
-  $.each(data, function(index, db) {
+  var databases = JSON.parse(databases); // convert text response to JSON
+  $.each(databases, function(index, database) {
     var tr = $('<tr>');
-    var td = $('<td>');
-    td.text(db.Database);
+    var td = $('<td>'); // make first <td>, add db name
+    td.text(database.Database);
     tr.append(td);
-    td = $('<td>');
-    var btn = $('<button class="delete_db" id=' + db.Database + '>');
+    td = $('<td>'); //make second <td>, add button with id of dbase name
+    var btn = $('<button class="delete_db" id=' + database.Database + '>');
     btn.text('delete');
     btn.addClass("btn btn-danger");
     td.append(btn);
