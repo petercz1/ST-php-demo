@@ -14,8 +14,10 @@ function create_user() {
   console.log('Inside create_user');
   $('#submit').removeClass().addClass('btn btn-warning right').text('submitting...');
   var userName = $('#user_name').val();
+  var userPass = $('#user_pass').val();
   var data = {
-    user: userName
+    user: userName,
+    pass: userPass
   };
   $.get('backend/users/create_user.php', data).done(success).fail(oops);
 }

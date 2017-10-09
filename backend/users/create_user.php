@@ -6,7 +6,7 @@ namespace chipbug\php_demo;
 include '../common/class.dbConnect.php';
 
 logger('testing');
-logger($_GET['db']);
+logger($_GET['']);
 $name = $_GET['db'];
 
 $db = new DbConnect($username, $password);
