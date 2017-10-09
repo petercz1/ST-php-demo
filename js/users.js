@@ -17,7 +17,7 @@ function create_user() {
   var data = {
     user: userName
   };
-  $.get('backend/db/create_user.php', data).done(success).fail(oops);
+  $.get('backend/users/create_user.php', data).done(success).fail(oops);
 }
 
 function drop_user() {
@@ -27,7 +27,7 @@ function drop_user() {
   var data = {
     user: userName
   };
-  $.get('backend/db/drop_user.php', data).done(dropped_user).fail(oops);
+  $.get('backend/users/drop_user.php', data).done(dropped_user).fail(oops);
 }
 
 function dropped_user(data) {
@@ -56,7 +56,7 @@ function reset() {
 
 function get_users() {
   console.log('Inside get_users');
-  $.get('backend/db/show_users.php').done(show_users).fail(oops);
+  $.get('backend/users/show_users.php').done(show_users).fail(oops);
 }
 
 function show_users(users) {
