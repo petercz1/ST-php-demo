@@ -11,8 +11,8 @@ logger($user);
 $db = new DbConnect($username, $password);
 $sql = "DROP USER $name";
 if ($db->conn->query($sql)) {
-    logger('dropped db');
-    echo 'dropped db';
+    logger("dropped user $name");
+    echo "dropped user $name";
 } else {
     logger($db->conn->error);
     echo $db->conn->error;
