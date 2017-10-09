@@ -1,2 +1,2 @@
 backend/common/credentials.php
-backend/common/errors.log
+backend/common/notices.log
