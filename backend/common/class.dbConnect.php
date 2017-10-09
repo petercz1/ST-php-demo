@@ -7,8 +7,9 @@ include 'credentials.php';
 
 class DbConnect
 {
+    global $admin_name, $admin_pass;
     public $conn;
-    public function __construct($admin_name, $admin_pass)
+    public function __construct()
     {
         try {
             $this->conn = new \PDO("mysql:host=localhost", $admin_name, $admin_pass);
