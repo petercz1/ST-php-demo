@@ -5,8 +5,8 @@ $(document).ready(do_setup);
 function do_setup() {
   $('*').off('click');
   console.log('Inside do_setup');
-  get_dbs();
-  $('#submit').click(create_db);
+  get_users();
+  $('#submit').click(create_user);
   $('#db_name').click(reset);
 }
 
@@ -27,11 +27,11 @@ function drop_db() {
   var data = {
     db: dbName
   };
-  $.get('backend/db/drop_user.php', data).done(dropped_db).fail(oops);
+  $.get('backend/db/drop_user.php', data).done(dropped_user).fail(oops);
 }
 
-function dropped_db(data) {
-  console.log('Inside dropped_db');
+function dropped_user(data) {
+  console.log('Inside dropped_user');
   console.log(data);
   do_setup();
 }
