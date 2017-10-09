@@ -9,7 +9,7 @@ logger('testing');
 logger($_GET['db']);
 $name = $_GET['db'];
 
-$db = new DbConnect($username, $password);
+$db = new DbConnect($admin_name, $admin_pass);
 $sql = "CREATE DATABASE $name";
 if ($db->conn->query($sql)) {
     logger('created db');

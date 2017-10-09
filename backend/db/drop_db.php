@@ -10,7 +10,7 @@ logger('testing');
 logger($_GET['db']);
 $name = $_GET['db'];
 
-$db = new DbConnect($username, $password);
+$db = new DbConnect($admin_name, $admin_pass);
 $sql = "DROP DATABASE $name";
 if ($db->conn->query($sql)) {
     logger('dropped db');

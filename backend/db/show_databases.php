@@ -5,7 +5,7 @@ namespace chipbug\php_demo;
 
 include '../common/class.dbConnect.php';
 
-$db = new DbConnect($username, $password);
+$db = new DbConnect($admin_name, $admin_pass);
 $sql = "SHOW DATABASES";
 $result = $db->conn->query($sql);
 if ($result) {
