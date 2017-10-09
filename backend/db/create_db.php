@@ -5,6 +5,7 @@ namespace chipbug\php_demo;
 
 include '../common/class.dbConnect.php';
 
+
 $name = $_GET['db'];
 logger("creating database $name");
 
