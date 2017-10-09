@@ -55,12 +55,12 @@ function reset() {
 }
 
 function get_dbs() {
-  console.log('Inside show_dbs');
+  console.log('Inside get_users');
   $.get('backend/db/show_users.php').done(show_dbs).fail(oops);
 }
 
 function show_dbs(databases) {
-  console.log('Inside show_dbs');
+  console.log('Inside show_users');
   $('.table tbody').html('');
   console.log(databases);
 
@@ -71,13 +71,13 @@ function show_dbs(databases) {
     td.text(database.Database);
     tr.append(td);
     td = $('<td>'); //make second <td>, add button with id of dbase name
-    var btn = $('<button class="delete_db" id=' + database.Database + '>');
+    var btn = $('<button class="delete_user" id=' + database.Database + '>');
     btn.text('delete');
     btn.addClass("btn btn-danger");
     td.append(btn);
     tr.append(td);
     $('.table tbody').append(tr);
   });
-  $('.delete_db').click(drop_db);
+  $('.delete_user').click(drop_db);
 
 }
