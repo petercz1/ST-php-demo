@@ -1,7 +1,7 @@
 <?php
 namespace chipbug\php_demo;
 
-// drops a user - dangerous!
+// drops privileges of user
 
 include '../common/class.dbConnect.php';
 

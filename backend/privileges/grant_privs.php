@@ -1,7 +1,7 @@
 <?php
 namespace chipbug\php_demo;
 
-// creates a user!
+// grants privileges to user
 
 include '../common/class.dbConnect.php';
 
