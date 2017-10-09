@@ -6,12 +6,12 @@ namespace chipbug\php_demo;
 include '../common/class.dbConnect.php';
 
 logger('testing');
-$name = $_GET['user'];
+$user = $_GET['user'];
 $pass = $_GET['pass'];
-logger("Creating $name: $pass");
+logger("Creating $user: $pass");
 
 $db = new DbConnect($admin_name, $admin_pass);
-$sql = "CREATE USER '$name'@'localhost' IDENTIFIED BY '$pass'";
+$sql = "CREATE USER '$user'@'localhost' IDENTIFIED BY '$pass'";
 
 if ($db->conn->query($sql)) {
     logger("created user $user");

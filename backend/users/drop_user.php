@@ -6,7 +6,7 @@ namespace chipbug\php_demo;
 include '../common/class.dbConnect.php';
 
 $user = $_GET['user'];
-logger($user);
+logger("dropping user $user");
 
 $db = new DbConnect($admin_name, $admin_pass);
 $sql = "DROP USER $user@'localhost'";
