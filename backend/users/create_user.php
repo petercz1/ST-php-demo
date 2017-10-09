@@ -8,7 +8,7 @@ include '../common/class.dbConnect.php';
 logger('testing');
 $name = $_GET['user'];
 $pass = $_GET['pass'];
-logger($name . ': ' . $pass);
+logger("Creating $name: $pass");
 
 $db = new DbConnect($admin_name, $admin_pass);
 $sql = "CREATE USER $name@localhost IDENTIFIED BY $pass";

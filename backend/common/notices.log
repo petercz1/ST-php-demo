@@ -1,4 +1,4 @@
-line 26 (class.dbConnect.php) killed connection
+Line 8 in show_users.php, Undefined variable: username  (ErrorException)line 26 (class.dbConnect.php) killed connection
 line 17 (class.dbConnect.php) Connected successfully
 line 26 (class.dbConnect.php) killed connection
 line 17 (class.dbConnect.php) Connected successfully
