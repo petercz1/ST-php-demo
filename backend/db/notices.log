@@ -1,3 +1,19 @@
+line 26 (class.dbConnect.php) killed connection
+line 17 (class.dbConnect.php) Connected successfully
+line 26 (class.dbConnect.php) killed connection
+line 16 (drop_db.php) dropped db
+line 17 (class.dbConnect.php) Connected successfully
+line 10 (drop_db.php) woohoo
+line 9 (drop_db.php) testing
+line 26 (class.dbConnect.php) killed connection
+line 17 (class.dbConnect.php) Connected successfully
+line 26 (class.dbConnect.php) killed connection
+line 15 (create_db.php) created db
+line 17 (class.dbConnect.php) Connected successfully
+line 9 (create_db.php) woohoo
+line 8 (create_db.php) testing
+line 26 (class.dbConnect.php) killed connection
+line 17 (class.dbConnect.php) Connected successfully
 line 8 (create_db.php) testing
 line 9 (create_db.php) woohoo2
 line 17 (class.dbConnect.php) Connected successfully
