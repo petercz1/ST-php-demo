@@ -10,6 +10,7 @@ logger("creating database $name");
 
 $db = new DbConnect($admin_name, $admin_pass);
 $sql = "CREATE DATABASE $name";
+
 if ($db->conn->query($sql)) {
     logger('created db');
     echo 'created db';
@@ -18,4 +19,5 @@ if ($db->conn->query($sql)) {
     echo $db->conn->error;
     logger($db->conn->error);
 }
+
 $db->kill();

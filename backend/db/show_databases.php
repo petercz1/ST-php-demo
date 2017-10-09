@@ -8,6 +8,7 @@ include '../common/class.dbConnect.php';
 $db = new DbConnect($admin_name, $admin_pass);
 $sql = "SHOW DATABASES";
 $result = $db->conn->query($sql);
+
 if ($result) {
     $output = $result->fetchAll();
     echo json_encode($output);
@@ -15,4 +16,5 @@ if ($result) {
     logger($db->conn->error);
     echo $db->conn->error;
 }
+
 $db->kill();

@@ -10,6 +10,7 @@ logger($user);
 
 $db = new DbConnect($admin_name, $admin_pass);
 $sql = "DROP USER $user@'localhost'";
+
 if ($db->conn->query($sql)) {
     logger("dropped user $user");
     echo "dropped user $user";
@@ -17,4 +18,5 @@ if ($db->conn->query($sql)) {
     logger($db->conn->error);
     echo $db->conn->error;
 }
+
 $db->kill();
