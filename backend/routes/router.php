@@ -2,7 +2,7 @@
 
 include '../common/errors.php';
 
-$uri = 'home';
+$uri = 'databases';
 $router = array();
 
 $router['home'] = function () {
