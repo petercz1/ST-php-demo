@@ -1,6 +1,6 @@
 <?php
 
-include '../common/errors.php';
+include '../common/logger.php';
 
 $uri = 'dd';
 $router = array();
