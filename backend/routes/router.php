@@ -1,5 +1,7 @@
 <?php
 
+include '../common/errors.php';
+
 $uri = 'home';
 $router = [];
 
