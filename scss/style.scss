@@ -1,25 +1,32 @@
-.right{
+body {
+    padding-top: 70px;
+}
+
+.right {
     float: right;
 }
-.left{
-    float:left;
+
+.left {
+    float: left;
 }
-.full_width{
+
+.full_width {
     width: 100%;
 }
 
-.full_width *{
+.full_width * {
     margin: 0.2em;
 }
 
-#input_command{
+#input_command {
     display: block;
     margin: auto;
 }
 
-#submit{
+#submit {
     width: 10em;
 }
-td{
+
+td {
     width: 100%;
 }
