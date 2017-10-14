@@ -3,7 +3,7 @@
 include '../common/errors.php';
 
 $uri = 'home';
-$router = [];
+$router = array();
 
 $router['home'] = function(){
     echo '<h1>home page</h1>';
