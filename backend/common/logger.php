@@ -8,7 +8,7 @@ function log_exception(Throwable $e) // for php => 7.0
     exit();
 }
 
-function log($message)
+function logger($message)
 {
     $debug_arr = debug_backtrace();
     $prepend = 'line ' . $debug_arr[0]['line'] . ' ('. basename($debug_arr[0]['file']) .') ' . print_r($message, true) . PHP_EOL;
