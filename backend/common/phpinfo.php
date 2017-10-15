@@ -1,5 +1,5 @@
 <?php
 
 // DO NOT DEPLOY!!!
-// ADD TO .gitignore
+// people will be able to read about your server setup!
 phpinfo();
