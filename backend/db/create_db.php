@@ -12,12 +12,11 @@ $db = new DbConnect($admin_name, $admin_pass);
 $sql = "CREATE DATABASE $name";
 
 if ($db->conn->query($sql)) {
-    logger('created db');
-    echo 'created db';
+    logger('created db'); // backend log
+    echo 'created db';    // frontend log
 } else {
-    echo 'whoops';
-    echo $db->conn->error;
     logger($db->conn->error);
+    echo 'whoops' . $db->conn->error;
 }
 
 $db->kill();
