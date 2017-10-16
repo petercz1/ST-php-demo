@@ -35,7 +35,6 @@ function show_dbs(databases) {
         $('.table tbody').append(tr);
     });
     $('.delete_db').click(drop_db);
-
 }
 
 function create_db() {
