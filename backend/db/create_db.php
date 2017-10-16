@@ -3,7 +3,7 @@ namespace chipbug\php_demo;
 
 // creates a database!
 
-include '../common/class.dbConnect.php';
+require_once '../common/class.dbConnect.php';
 
 $name = $_GET['db'];
 logger("creating database $name");

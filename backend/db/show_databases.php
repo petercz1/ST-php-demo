@@ -3,7 +3,7 @@ namespace chipbug\php_demo;
 
 // gets all databases
 
-include '../common/class.dbConnect.php';
+require_once '../common/class.dbConnect.php';
 
 $db = new DbConnect($admin_name, $admin_pass);
 $sql = "SHOW DATABASES";

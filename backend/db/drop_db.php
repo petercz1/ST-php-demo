@@ -3,7 +3,7 @@ namespace chipbug\php_demo;
 
 // drops a database - dangerous!
 
-include '../common/class.dbConnect.php';
+require_once '../common/class.dbConnect.php';
 
 $name = $_GET['db'];
 logger("dropping database $name");
