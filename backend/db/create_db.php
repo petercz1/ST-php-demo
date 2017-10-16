@@ -14,7 +14,7 @@ if ($db->conn->query($sql)) {
     echo 'created db';    // frontend log
 } else {
     logger($db->conn->error);
-    echo 'whoops' . $db->conn->error;
+    echo $db->conn->error;
 }
 
 $db->kill();
