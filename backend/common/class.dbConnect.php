@@ -11,37 +11,17 @@ class DbConnect
     public function __construct($admin_name, $admin_pass)
     {
         try {
-            $conn = new \mysqli('localhost', $admin_name, $admin_pass);
+            $this->conn = new \PDO("mysql:host=localhost", $admin_name, $admin_pass);
+            $this->conn->setAttribute(\PDO::ATTR_ERRMODE, \PDO::ERRMODE_EXCEPTION);
+            //logger("Connected successfully");
             return $this->conn;
-        } catch (Exception $ex) {
-            logger($ex->getMessage());
+        } catch (PDOException $e) {
+            logger("Connection failed: " . $e->getMessage());
         }
     }
-
     public function kill()
     {
-        $this->conn->close();
-        logger('killed connection');
+        $this->conn = null;
+        //logger('killed connection');
     }
 }
-
-// class DbConnect
-// {
-//     public $conn;
-//     public function __construct($admin_name, $admin_pass)
-//     {
-//         try {
-//             $this->conn = new \PDO("mysql:host=localhost", $admin_name, $admin_pass);
-//             $this->conn->setAttribute(\PDO::ATTR_ERRMODE, \PDO::ERRMODE_EXCEPTION);
-//             //logger("Connected successfully");
-//             return $this->conn;
-//         } catch (PDOException $e) {
-//             logger("Connection failed: " . $e->getMessage());
-//         }
-//     }
-//     public function kill()
-//     {
-//         $this->conn = null;
-//         //logger('killed connection');
-//     }
-// }
