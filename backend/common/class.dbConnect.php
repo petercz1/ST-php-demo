@@ -2,8 +2,8 @@
 namespace chipbug\php_demo;
 
 // connects to a database and returns a connection object
-include 'logger.php';
-include 'credentials.php';
+require_once 'logger.php';
+require_once 'credentials.php';
 
 class DbConnect
 {
@@ -11,7 +11,7 @@ class DbConnect
     public function __construct($admin_name, $admin_pass)
     {
         try {
-            $this->conn = new PDO("mysql:host=localhost", $admin_name, $admin_pass);
+            $this->conn = new \PDO("mysql:host=localhost", $admin_name, $admin_pass);
             $this->conn->setAttribute(\PDO::ATTR_ERRMODE, \PDO::ERRMODE_EXCEPTION);
             //logger("Connected successfully");
             return $this->conn;
