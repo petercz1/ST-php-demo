@@ -14,7 +14,7 @@ class DbConnect
             $conn = new mysqli($server, $admin_name, $admin_pass);
             return $this->conn;
         } catch (Exception $ex) {
-            logger($ex);
+            logger($ex->getMessage());
         }
     }
 }
