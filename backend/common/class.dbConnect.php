@@ -17,8 +17,13 @@ class DbConnect
             logger($ex->getMessage());
         }
     }
-}
 
+    public function kill()
+    {
+        $this->conn->close();
+        logger('killed connection');
+    }
+}
 
 // class DbConnect
 // {
