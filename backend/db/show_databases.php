@@ -1,6 +1,4 @@
 <?php
-namespace chipbug\php_demo;
-
 // gets all databases
 
 require_once '../common/class.dbConnect.php';

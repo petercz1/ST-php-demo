@@ -1,6 +1,4 @@
 <?php
-namespace chipbug\php_demo;
-
 // creates a database!
 
 require_once '../common/class.dbConnect.php';
