@@ -7,8 +7,13 @@ require_once 'credentials.php';
 
 class DbConnect
 {
-    public function __construct()
+    public $conn;
+    public function __construct($admin_name, $admin_pass)
     {
+        try {
+        } catch (Exception $ex) {
+            logger($ex);
+        }
     }
 }
 
