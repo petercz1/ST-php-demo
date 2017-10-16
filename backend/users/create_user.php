@@ -1,5 +1,4 @@
 <?php
-namespace chipbug\php_demo;
 
 // creates a user!
 

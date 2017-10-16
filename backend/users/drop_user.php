@@ -1,5 +1,4 @@
 <?php
-namespace chipbug\php_demo;
 
 // drops a user - dangerous!
 
