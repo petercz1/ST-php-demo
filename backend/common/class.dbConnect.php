@@ -11,6 +11,8 @@ class DbConnect
     public function __construct($admin_name, $admin_pass)
     {
         try {
+            $conn = new mysqli($server, $admin_name, $admin_pass);
+            return $this->conn;
         } catch (Exception $ex) {
             logger($ex);
         }
