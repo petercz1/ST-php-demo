@@ -12,7 +12,7 @@ function do_setup() {
 
 function get_dbs() {
     console.log('Inside show_dbs');
-    $.get('backend/db/show_databases.php').done(show_dbs).fail(oops);
+    $.get('backend/db/show_databases.php').done(show_dbs).fail(blow_up);
 }
 
 function show_dbs(databases) {
