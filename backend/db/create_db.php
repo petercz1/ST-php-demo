@@ -2,7 +2,7 @@
 // creates a database!
 
 require_once '../common/class.dbConnect.php';
-
+sleep(1);
 $name = $_GET['db'];
 logger("creating database $name");
 
